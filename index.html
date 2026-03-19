@@ -1245,44 +1245,64 @@
     <div class="container">
       
 
+
 <style>
-  .ma-box1 {
-    display: flex;
-    justify-content: left;
-  }
-  .ma-box-item-left {
-    width: 100%;
-  }
+ 
+.ma-box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+ 
+.ma-box-item-left {
+  width: calc(100% - 150px);
+}
+
+ 
+.ma-box-item-right {
+  width: 140px;
+  padding-left: 10px;
+}
+
+ 
+.ma-box-item-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
 </style>
+
 
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
     <h1>OTHER ACTIVITIES</h1>
     
   </div>
+
   <div class="col-12 col-lg-8">
 
-
-<div class="card experience course">
-  <div class="card-body">
-    <div class="ma-box1">
-      <div class="ma-box-item-left">
-        <strong>WDSI (War-Related Diplomatic Sentiment Index) Observatory</strong> is a research platform developed by <strong>Cunyi</strong>. 
-        It constructs high-frequency geopolitical sentiment indices from official diplomatic texts across 9 countries (2001–2026). 
-        Using a multi-stage LLM pipeline, the project identifies war-related content, classifies sentiment, and aggregates signals into daily indices. 
-        The platform provides cross-country comparisons, event-aligned time series, and open-access datasets. 
-        The index has been shown to predict geopolitical risk dynamics and international capital flows. 
-        <br><br>
-        <a href="https://yangcy0126.github.io/wdsi-index-site/#overview" target="_blank">
-          Visit WDSI Observatory
-        </a>
-      </div>
-      <div class="ma-box-item-right">
-        <img alt="WDSI" src="img/wdsi.jpg" />
+    
+    <div class="card experience course">
+      <div class="card-body">
+        <div class="ma-box1">
+          <div class="ma-box-item-left">
+            <strong>WDSI (War-Related Diplomatic Sentiment Index) Observatory</strong> is a research data platform developed by <strong>Cunyi</strong>. 
+            It constructs high-frequency geopolitical sentiment indices from official diplomatic texts across 9 countries (2001–2026). 
+            Using a multi-stage LLM pipeline, the project identifies war-related content, classifies sentiment, and aggregates signals into daily indices with smoothing. 
+            The platform provides cross-country comparisons, event-aligned time series, and open-access datasets. 
+            The index predicts geopolitical risk dynamics and international capital flows.
+            <br><br>
+            <a href="https://yangcy0126.github.io/wdsi-index-site/#overview" target="_blank">
+              Visit WDSI Observatory
+            </a>
+          </div>
+          <div class="ma-box-item-right">
+            <img alt="WDSI" src="img/wdsi.jpg" />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
     
     <div class="card experience course">
@@ -1290,16 +1310,18 @@
         <div class="ma-box1">
           <div class="ma-box-item-left">
             “Digital Risk” is a WeChat public account independently operated by <strong>Cunyi</strong> since 2023. 
-            It primarily shares hot topics, academic literature, calls for papers, and policies related to digital economics, 
-            digital finance, and risk management. Currently, it has attracted over 6,000 followers, published more than 70 original articles, and accumulated over 200,000 total reads.
+            It shares hot topics, academic literature, calls for papers, and policies related to digital economics, 
+            digital finance, and risk management. Currently, it has attracted over 7,000 followers, published more than 90 original articles, 
+            and accumulated over 200,000 total reads.
           </div>
           <div class="ma-box-item-right">
-            <img alt="" src="img/20250427063336(2).jpg" />
+            <img alt="Digital Risk" src="img/20250427063336(2).jpg" />
           </div>
         </div>
       </div>
     </div>
 
+    
     <div class="card experience course">
       <div class="card-body">
         <div class="ma-box1">
@@ -1307,12 +1329,10 @@
             <strong>Cunyi Yang</strong>, Huan Liu, Yan Zeng, “Insurance Services Supporting High-Quality Development of Guangdong’s Manufacturing Industry”, Guangdong Insurance Society, 2023
           </div>
           <div class="ma-box-item-right">
-
           </div>
         </div>
       </div>
     </div>
-
 
   </div>
 </div>
