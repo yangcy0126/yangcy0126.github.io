@@ -18,6 +18,11 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+[[item]]
+  publication_name = "The Allocative Channel of Digital Transformation: Information Precision and Production-Network Spillovers"
+  publication_url = ""
+  writer_names = "Gu, M., <strong>Yang, C*</strong>."
+  organization = "_Journal of Business Research_. 2026"
 
 [[item]]
   publication_name = "Digitalization of banks and inclusive finance: New insights from cultural industry’s financing constraints"
