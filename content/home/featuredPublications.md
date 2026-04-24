@@ -20,9 +20,9 @@ date_format = "Jan 2006"
 
 [[item]]
   publication_name = "The Allocative Channel of Digital Transformation: Information Precision and Production-Network Spillovers"
-  publication_url = ""
+  publication_url = "https://doi.org/10.1016/j.jbusres.2026.116237"
   writer_names = "Gu, M., <strong>Yang, C*</strong>."
-  organization = "_Journal of Business Research_. 2026"
+  organization = "_Journal of Business Research_. 2026, 212, 116237"
 
 [[item]]
   publication_name = "Digitalization of banks and inclusive finance: New insights from cultural industry’s financing constraints"
