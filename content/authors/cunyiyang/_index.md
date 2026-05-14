@@ -20,7 +20,7 @@ organizations:
   url: "https://www.hku.hk/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: <The continuous advancement of digital technologies is certain, and another key to ensuring they bring happiness to people is to clearly recognize their risks and manage them.>
+bio: <The continued advancement of digital technologies is inevitable, and ensuring that they contribute to human well-being requires the clear recognition and management of their risks.>
 
 
 interests:
@@ -62,18 +62,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: mailto:yangcy9@mail2.sysu.edu.cn
-#- icon: twitter
-#  icon_pack: fab
-#  link: https://twitter.com/erawijantaript
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=dI8p98sAAAAJ&hl=en
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/erawijantari
-#- icon: linkedin
-#  icon_pack: fab
-#  link: https://www.linkedin.com/in/erawijantari-pande-putu/
 - icon: orcid
   icon_pack: fab
   link: https://orcid.org/0000-0001-5420-1025
@@ -94,4 +85,4 @@ email: ""
 #- Visitors
 ---
 
-I am a URC Postdoctoral Fellow at HKU Business School, The University of Hong Kong, focusing on the **Theory and Application of Risk Management in Digital Transformation**. I believe that while the continued advancement of digital technologies is inevitable, ensuring that they contribute to human well-being also requires clearly recognizing and managing their risks.
+I am a URC Postdoctoral Fellow at HKU Business School, The University of Hong Kong. My research focuses on the **Theory and Application of Risk Management in Digital Transformation**. I believe that while the continued advancement of digital technologies is inevitable, ensuring that they contribute to human well-being also requires the clear recognition and management of their risks.

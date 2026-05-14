@@ -40,7 +40,7 @@ Frontier Symposium on Autonomous Knowledge System in Digital Finance<br>
 Frontier Symposium on Autonomous Knowledge System in Management<br>
 <span style="font-size: 0.95em; color: #555;">1st in Guangzhou 2025</span></p></li>
 
-Annual Conference of Quantitative Finance and Insurance Section of Chinese Society of Optimization, Overall Planning and Economical Mathematics<br>
+Annual Conference of the Quantitative Finance and Insurance Section of the Chinese Society of Optimization, Overall Planning and Economic Mathematics<br>
 <span style="font-size: 0.95em; color: #555;">7th in Kunming 2025; 6th in Nanjing 2024; 5th in Wuhan 2023</span></p></li>
 
 Quarterly Journal of Finance Forum<br>
@@ -61,13 +61,13 @@ Internet and Digital Economy Forum<br>
 Risk Management and Financial Statistics Forum<br>
 <span style="font-size: 0.95em; color: #555;">9th in Guangzhou 2024; 7th in Guangzhou 2022; 6th in Xiamen 2021</span></p></li>
 
-Annual Conference of Chinese Fintech<br>
+Annual Conference on Chinese FinTech<br>
 <span style="font-size: 0.95em; color: #555;">7th in Guangzhou 2023</span></p></li>
 
 Symposium on Frontier Issues of Industrial Integration by the Chinese Society of Industrial Economics<br>
 <span style="font-size: 0.95em; color: #555;">1st in Guangzhou 2023</span></p></li>
 
-Monetary Policy Issues and Challenges for Asian Economies International Conference<br>
+International Conference on Monetary Policy Issues and Challenges for Asian Economies<br>
 <span style="font-size: 0.95em; color: #555;">Online 2021</span></p></li>
 
 Annual Conference of Chinese Statistical Society<br>

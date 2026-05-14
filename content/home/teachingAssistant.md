@@ -19,9 +19,9 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 +++
-Teaching Assistant, “AI and Financial Practice”, 2025, Sun Yat-sen University 
+Teaching Assistant for "AI and Financial Practice," Sun Yat-sen University, 2025
 
-Teaching Assistant, “Digital Finance and Insurance”, 2024, Sun Yat-sen University 
+Teaching Assistant for "Digital Finance and Insurance," Sun Yat-sen University, 2024
 
-Teaching Assistant, “Management of New Transformations”, 2023, Sun Yat-sen University
+Teaching Assistant for "Management of New Transformations," Sun Yat-sen University, 2023
 

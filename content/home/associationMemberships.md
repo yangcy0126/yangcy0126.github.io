@@ -21,7 +21,7 @@ date_format = "Jan 2006"
 +++
 Systems Engineering Society of China (SESC)
 
-Chinese Society of Optimization, Overall Planning and Economical Mathematics (CSOOPEM)
+Chinese Society of Optimization, Overall Planning and Economic Mathematics (CSOOPEM)
 
 American Finance Association (AFA)
 
