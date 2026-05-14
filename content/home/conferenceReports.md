@@ -19,6 +19,9 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 +++
+China FinTech Research Conference (CFTRC)<br>
+<span style="font-size: 0.95em; color: #555;">Shenzhen 2026</span></p></li>
+
 China Economic Annual Conference<br>
 <span style="font-size: 0.95em; color: #555;">25th in Shanghai 2025; 24th in Beijing 2024</span></p></li>
 
@@ -33,9 +36,6 @@ Greater Bay Area Digital Finance Forum<br>
 
 Conference on Big Data, Artificial Intelligence, and FinTech<br>
 <span style="font-size: 0.95em; color: #555;">8th in Guangzhou 2025</span></p></li>
-
-China FinTech Research Conference (CFTRC)<br>
-<span style="font-size: 0.95em; color: #555;">2026 in Shenzhen</span></p></li>
 
 Frontier Symposium on Autonomous Knowledge System in Digital Finance<br>
 <span style="font-size: 0.95em; color: #555;">1st in Guangzhou 2025</span></p></li>
@@ -66,9 +66,6 @@ Risk Management and Financial Statistics Forum<br>
 
 Annual Conference on Chinese FinTech<br>
 <span style="font-size: 0.95em; color: #555;">7th in Guangzhou 2023</span></p></li>
-
-Symposium on Frontier Issues of Industrial Integration by the Chinese Society of Industrial Economics<br>
-<span style="font-size: 0.95em; color: #555;">1st in Guangzhou 2023</span></p></li>
 
 International Conference on Monetary Policy Issues and Challenges for Asian Economies<br>
 <span style="font-size: 0.95em; color: #555;">Online 2021</span></p></li>
