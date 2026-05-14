@@ -14,10 +14,10 @@ superuser: true
 
 # Organizations/Affiliations
 organizations:
-- name: "Lingnan College"
-  url: ""
-- name: Sun Yat-sen University
-  url: "https://www.sysu.edu.cn/sysuen/"
+- name: "HKU Business School"
+  url: "https://www.hkubs.hku.hk/"
+- name: "The University of Hong Kong"
+  url: "https://www.hku.hk/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: <The continuous advancement of digital technologies is certain, and another key to ensuring they bring happiness to people is to clearly recognize their risks and manage them.>
