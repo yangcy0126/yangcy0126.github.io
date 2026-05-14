@@ -94,6 +94,4 @@ email: ""
 #- Visitors
 ---
 
-I am a URC Postdoctoral Fellow, HKU Business School, The University of Hong Kong, focusing on the **Theory and Application of Risk Management in Digital Transformation**. I believe that while the continuous advancement of digital technologies is certain, another key to ensuring they bring happiness to people is to clearly recognize their risks and manage them.
-
-I have published several papers in academic journals, including *Financial Review*, *Technological Forecasting & Social Change*, *Business Strategy and the Environment* in English, as well as 经济研究 and 系统工程理论与实践 in Chinese.
+I am a URC Postdoctoral Fellow at HKU Business School, The University of Hong Kong, focusing on the **Theory and Application of Risk Management in Digital Transformation**. I believe that while the continued advancement of digital technologies is inevitable, ensuring that they contribute to human well-being also requires clearly recognizing and managing their risks.
