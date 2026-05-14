@@ -21,7 +21,7 @@ date_format = "Jan 2006"
 <ul style="padding-left: 1.2em;">
   <li>
     <p style="margin-bottom: 1em;">
-      <em>Applied Economics</em>, <em>Business Strategy and the Environment</em>, <em>China Finance Review International</em>, <em>Economic Modelling</em>, <em>Energy Economics</em>, <em>Review of Development Economics</em>, 《系统工程理论与实践》, etc.
+      <em>Applied Economics</em>, <em>Business Strategy and the Environment</em>, <em>China Finance Review International</em>, <em>Economic Modelling</em>, <em>Energy Economics</em>, <em>International Review of Financial Analysis</em>, <em>Review of Development Economics</em>, 《系统工程理论与实践》, etc.
     </p>
   </li>
 </ul>
