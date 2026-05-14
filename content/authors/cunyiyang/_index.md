@@ -68,6 +68,9 @@ social:
 - icon: orcid
   icon_pack: fab
   link: https://orcid.org/0000-0001-5420-1025
+- icon: ssrn
+  icon_pack: custom
+  link: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5806379
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # 通过下面的指令激活CV
