@@ -24,9 +24,9 @@ bio: <The continued advancement of digital technologies is inevitable, and ensur
 
 
 interests:
-- Digitalization
-- Risk Management
-- Green Finance
+- Digital finance and risk management
+- Digital transformation and economic welfare
+- FinTech, energy markets, and climate risk
 
 education:
   courses:
@@ -88,4 +88,4 @@ email: ""
 #- Visitors
 ---
 
-I am a URC Postdoctoral Fellow at HKU Business School, The University of Hong Kong. My research focuses on the **Theory and Application of Risk Management in Digital Transformation**. I believe that while the continued advancement of digital technologies is inevitable, ensuring that they contribute to human well-being also requires the clear recognition and management of their risks.
+I am a URC Postdoctoral Fellow at HKU Business School, The University of Hong Kong, and received my Ph.D. in Finance from Sun Yat-sen University. My research focuses on risk management in digital finance. My work has been published in *Economic Research Journal*, *Systems Engineering - Theory & Practice*, *Financial Review*, *Technological Forecasting and Social Change*, and *Business Strategy and the Environment*. I serve as an Assistant Editor of *International Review of Finance*, the flagship journal of the Asian Finance Association. I was named an Academic Rising Star at the 25th China Economics Annual Conference and have received the Sun Yat-sen University President Scholarship, National Scholarships for doctoral and master's students, the China Excellent Young Scholar Paper Award in Finance, the 13th Guangdong Provincial Award for Excellence in Financial Research, an FSERM Outstanding Paper Award, and several conference outstanding paper awards.

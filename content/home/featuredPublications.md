@@ -46,7 +46,7 @@ date_format = "Jan 2006"
   publication_name = "Government in the digital age: Exploring the impact of digital transformation on governmental efficiency"
   publication_url = "https://doi.org/10.1016/j.techfore.2024.123722"
   writer_names = "**Yang, C.**, Gu, M., Albitar, K."
-  organization = "_Technological Forecasting & Social Change_. 2024, 208, 123722"
+  organization = "_Technological Forecasting and Social Change_. 2024, 208, 123722"
   
 [[item]]
   publication_name = "ESG ratings and green innovation: A U-shaped journey towards sustainable development"

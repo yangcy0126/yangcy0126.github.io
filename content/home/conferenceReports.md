@@ -40,9 +40,6 @@ Conference on Big Data, Artificial Intelligence, and FinTech<br>
 Frontier Symposium on Autonomous Knowledge System in Digital Finance<br>
 <span style="font-size: 0.95em; color: #555;">1st in Guangzhou 2025</span></p></li>
 
-Frontier Symposium on Autonomous Knowledge System in Management<br>
-<span style="font-size: 0.95em; color: #555;">1st in Guangzhou 2025</span></p></li>
-
 Annual Conference of the Quantitative Finance and Insurance Section of the Chinese Society of Optimization, Overall Planning and Economic Mathematics<br>
 <span style="font-size: 0.95em; color: #555;">7th in Kunming 2025; 6th in Nanjing 2024; 5th in Wuhan 2023</span></p></li>
 
