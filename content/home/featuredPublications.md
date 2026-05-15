@@ -33,7 +33,7 @@ date_format = "Jan 2006"
 [[item]]
   publication_name = "The relationship between FinTech and energy markets in China"
   publication_url = "https://doi.org/10.1016/j.techfore.2025.124188"
-  writer_names = "Huang, Y., Zhou, Q., <strong>Yang, C*</strong>., & Albitar, K."
+  writer_names = "Huang, Y., Zhou, Q., <strong>Yang, C*</strong>., Albitar, K."
   organization = "_Technological Forecasting and Social Change_. 2025, 217, 124188"
   
 [[item]]
