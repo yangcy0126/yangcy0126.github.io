@@ -25,7 +25,7 @@ date_format = "Jan 2006"
     
   Sun Yat-sen University President's Scholarship, 2024
   
-  Lingnan College Outstanding Doctoral Student Scholarship, 2024
+  Lingnan College Outstanding Doctoral Student Scholarship, 2024, 2025
   
   National Scholarship for Doctoral Students, 2024
   
