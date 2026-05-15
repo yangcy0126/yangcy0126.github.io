@@ -31,10 +31,10 @@ date_format = "Jan 2006"
   organization = "_Financial Review_. 2025, 60(1), 71-93"
 
 [[item]]
-  publication_name = "Enterprise characteristics and incentive effect of environmental regulation"
-  publication_url = "https://doi.org/10.1111/irfi.70032"
-  writer_names = "Guo, C., Ma, W., <strong>Yang, C*</strong>., Yang, R."
-  organization = "_International Review of Finance_. 2025, 25(6), 70032"
+  publication_name = "The relationship between FinTech and energy markets in China"
+  publication_url = "https://doi.org/10.1016/j.techfore.2025.124188"
+  writer_names = "Huang, Y., Zhou, Q., <strong>Yang, C*</strong>., & Albitar, K."
+  organization = "_Technological Forecasting and Social Change_. 2025, 217, 124188"
   
 [[item]]
   publication_name = "Climate transition risk and industry returns: The impact of green innovation and carbon market uncertainty"
