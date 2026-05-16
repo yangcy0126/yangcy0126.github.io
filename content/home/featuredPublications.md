@@ -55,7 +55,7 @@ date_format = "Jan 2006"
   publication_url = "https://doi.org/10.1016/j.techfore.2024.123722"
   writer_names = "**Yang, C.**, Gu, M., Albitar, K."
   organization = "_Technological Forecasting and Social Change_. 2024, 208, 123722"
-  image = "img/publications/government-digital-transformation.jpg"
+  image = "img/publications/government-digital-transformation-v2.jpg"
   image_alt = "Government digital transformation framework"
   
 [[item]]
@@ -71,7 +71,7 @@ date_format = "Jan 2006"
   publication_url = "https://onlinelibrary.wiley.com/doi/full/10.1002/bse.3778"
   writer_names = "Wang, C., Wang, L., Zhao, S., <strong>Yang, C*</strong>., Albitar, K."
   organization = "_Business Strategy and the Environment_. 2024, 33(6), 5776-5796"
-  image = "img/publications/fintech-carbon-emissions.jpg"
+  image = "img/publications/fintech-carbon-emissions-v2.jpg"
   image_alt = "FinTech and corporate carbon emissions framework"
 
 
