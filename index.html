@@ -774,7 +774,7 @@
 
     </div>
 
-    <p class="text-right text-muted" style="font-size: 0.9rem; margin: 1rem 0 0;">Last updated: May 2026</p>
+    <p class="text-right text-muted" style="font-size: 0.9rem; margin: 1rem 0 0; padding-right: 0.75rem; white-space: nowrap;">Last updated: May 2026</p>
   </div>
 </div>
 
@@ -944,6 +944,47 @@
 
 
 
+<style>
+  .featured-publication-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .featured-publication-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .featured-publication-image-wrap {
+    flex: 0 0 230px;
+    max-width: 230px;
+  }
+
+  .featured-publication-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background: #fff;
+  }
+
+  @media (max-width: 767.98px) {
+    .featured-publication-card {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .featured-publication-image-wrap {
+      flex-basis: auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+</style>
+
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
     <h1>SELECTED PUBLICATIONS</h1>
@@ -954,32 +995,81 @@
 
     
     
+      
       <div class="card experience course">
-        <div class="card-body"><a href="https://doi.org/10.1016/j.jbusres.2026.116237" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">The Allocative Channel of Digital Transformation: Information Precision and Production-Network Spillovers</h4></a><div class="card-subtitle my-0 article-metadata">Gu, M., <strong>Yang, C*</strong>.</div><div class=""><em>Journal of Business Research</em>. 2026, 212, 116237</div></div>
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.jbusres.2026.116237" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">The Allocative Channel of Digital Transformation: Information Precision and Production-Network Spillovers</h4></a><div class="card-subtitle my-0 article-metadata">Gu, M., <strong>Yang, C*</strong>.</div><div class=""><em>Journal of Business Research</em>. 2026, 212, 116237</div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/allocative-channel.jpg" alt="Allocative channel of digital transformation">
+              </div></div>
+
+        </div>
       </div>
     
+      
       <div class="card experience course">
-        <div class="card-body"><a href="https://doi.org/10.1111/fire.12404" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Digitalization of banks and inclusive finance: New insights from cultural industry’s financing constraints</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Chen, L., Li, Q., Wu, J.</div><div class=""><em>Financial Review</em>. 2025, 60(1), 71-93</div></div>
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1111/fire.12404" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Digitalization of banks and inclusive finance: New insights from cultural industry’s financing constraints</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Chen, L., Li, Q., Wu, J.</div><div class=""><em>Financial Review</em>. 2025, 60(1), 71-93</div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/bank-digitalization-inclusive-finance.jpg" alt="Bank digitalization and inclusive finance">
+              </div></div>
+
+        </div>
       </div>
     
+      
       <div class="card experience course">
-        <div class="card-body"><a href="https://doi.org/10.1016/j.techfore.2025.124188" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">The relationship between FinTech and energy markets in China</h4></a><div class="card-subtitle my-0 article-metadata">Huang, Y., Zhou, Q., <strong>Yang, C*</strong>., Albitar, K.</div><div class=""><em>Technological Forecasting and Social Change</em>. 2025, 217, 124188</div></div>
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.techfore.2025.124188" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">The relationship between FinTech and energy markets in China</h4></a><div class="card-subtitle my-0 article-metadata">Huang, Y., Zhou, Q., <strong>Yang, C*</strong>., Albitar, K.</div><div class=""><em>Technological Forecasting and Social Change</em>. 2025, 217, 124188</div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/fintech-energy-markets.jpg" alt="FinTech and energy markets in China">
+              </div></div>
+
+        </div>
       </div>
     
+      
       <div class="card experience course">
-        <div class="card-body"><a href="https://doi.org/10.1016/j.techfore.2025.124056" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Climate transition risk and industry returns: The impact of green innovation and carbon market uncertainty</h4></a><div class="card-subtitle my-0 article-metadata">Zhou, Q., Ni, J., <strong>Yang, C*</strong>.</div><div class=""><em>Technological Forecasting and Social Change</em>. 2025, 214, 124056</div></div>
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.techfore.2025.124056" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Climate transition risk and industry returns: The impact of green innovation and carbon market uncertainty</h4></a><div class="card-subtitle my-0 article-metadata">Zhou, Q., Ni, J., <strong>Yang, C*</strong>.</div><div class=""><em>Technological Forecasting and Social Change</em>. 2025, 214, 124056</div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/climate-transition-risk.jpg" alt="Climate transition risk and industry returns">
+              </div></div>
+
+        </div>
       </div>
     
+      
       <div class="card experience course">
-        <div class="card-body"><a href="https://doi.org/10.1016/j.techfore.2024.123722" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Government in the digital age: Exploring the impact of digital transformation on governmental efficiency</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Gu, M., Albitar, K.</div><div class=""><em>Technological Forecasting and Social Change</em>. 2024, 208, 123722</div></div>
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.techfore.2024.123722" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Government in the digital age: Exploring the impact of digital transformation on governmental efficiency</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Gu, M., Albitar, K.</div><div class=""><em>Technological Forecasting and Social Change</em>. 2024, 208, 123722</div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/government-digital-transformation.jpg" alt="Government digital transformation framework">
+              </div></div>
+
+        </div>
       </div>
     
+      
       <div class="card experience course">
-        <div class="card-body"><a href="https://doi.org/10.1002/bse.3692" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">ESG ratings and green innovation: A U-shaped journey towards sustainable development</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Zhu, C., Albitar, K.</div><div class=""><em>Business Strategy and the Environment</em>. 2024, 33(5), 4108-4129</div></div>
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1002/bse.3692" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">ESG ratings and green innovation: A U-shaped journey towards sustainable development</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Zhu, C., Albitar, K.</div><div class=""><em>Business Strategy and the Environment</em>. 2024, 33(5), 4108-4129</div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/esg-green-innovation.jpg" alt="ESG ratings and green innovation">
+              </div></div>
+
+        </div>
       </div>
     
+      
       <div class="card experience course">
-        <div class="card-body"><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/bse.3778" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">The impact of fintech on corporate carbon emissions: Towards green and sustainable development</h4></a><div class="card-subtitle my-0 article-metadata">Wang, C., Wang, L., Zhao, S., <strong>Yang, C*</strong>., Albitar, K.</div><div class=""><em>Business Strategy and the Environment</em>. 2024, 33(6), 5776-5796</div></div>
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/bse.3778" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">The impact of fintech on corporate carbon emissions: Towards green and sustainable development</h4></a><div class="card-subtitle my-0 article-metadata">Wang, C., Wang, L., Zhao, S., <strong>Yang, C*</strong>., Albitar, K.</div><div class=""><em>Business Strategy and the Environment</em>. 2024, 33(6), 5776-5796</div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/fintech-carbon-emissions.jpg" alt="FinTech and corporate carbon emissions framework">
+              </div></div>
+
+        </div>
       </div>
     
     
