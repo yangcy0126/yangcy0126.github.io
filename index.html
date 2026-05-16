@@ -1749,11 +1749,52 @@
 
 
 
-  <section id="contributionsInChinese" class="home-section wg-academicAwards   "  >
+  <section id="contributionsInChinese" class="home-section wg-featuredPublications   "  >
     <div class="container">
       
 
 
+
+<style>
+  .featured-publication-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .featured-publication-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .featured-publication-image-wrap {
+    flex: 0 0 230px;
+    max-width: 230px;
+  }
+
+  .featured-publication-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background: #fff;
+  }
+
+  @media (max-width: 767.98px) {
+    .featured-publication-card {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .featured-publication-image-wrap {
+      flex-basis: auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+</style>
 
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
@@ -1761,33 +1802,43 @@
     
   </div>
   <div class="col-12 col-lg-8">
+    
 
+    
+    
       
-        <div class="card experience course">
-          <div class="card-body">
-              <h2>发表论文</h2>
-<ul style="padding-left: 1.2em;">
-  <li><p style="margin-bottom: 1em;">曾燕, 查佳婧, 杨海生, <strong>杨存奕（通讯作者）</strong>, “中国数字普惠金融的发展模式探究：经济与民生的视角”. 《经济研究》, 2024, 59(8), 39–56<br>
-  <span style="font-size: 0.95em; color: #555;">被《新华文摘》《人大复印报刊资料》《国际货币评论》《数字经济与贸易自主知识体系建构报告》转载</span></p></li>
-  <li><p style="margin-bottom: 1em;">廖高可, <strong>杨存奕</strong>, 顾明瑞, “数字平台推荐机制、专业化生产与消费者福利”. 《系统工程理论与实践》, 2025, 45(10), 3323-3337</p></li>
-  <li><p style="margin-bottom: 1em;">黄哲豪, <strong>杨存奕</strong>, 李正辉, “企业金融化: 最优配置, 动机判别与适度区域”. 《系统工程理论与实践》, 2023, 43(6), 1545–1567</p></li>
-</ul>
-<h2>工作论文</h2>
-<ul style="padding-left: 1.2em;">
-  <li><p style="margin-bottom: 1em;">企业数字化转型的金融支持和路径权衡</p></li>
-  <li><p style="margin-bottom: 1em;">从技能偏向到红利共享——数实融合重塑薪酬差距的动态机制探究</p></li>
-  <li><p style="margin-bottom: 1em;">如何发展工业企业的生产力？——生产性数字化转型策略与政策</p></li>
-  <li><p style="margin-bottom: 1em;">中国金融机构数字化能力的测度与影响研究</p></li>
-  <li><p style="margin-bottom: 1em;">专业的回报：文理科互补性及其对城市特性的响应</p></li>
-</ul>
+      <div class="card experience course">
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><a href="https://kns.cnki.net/kcms2/article/abstract?v=_W1AupcyYgY7y35f8i7M4Lxl8TAOHk50Iv8xLDtxdpPgpdR99pq4_QR_leQPB2w4mnJNP5ROTWt9CzXODGLXsgD27qdYER5iyzejYfNPqIAxLmK5-g4mipdkAnLMLYRnGE5v5NToY8stZJBL2LIkP5T6XxSK6_gVz7mt6IyrWdwDiSillyba-1BcQTfZaaAl&amp;uniplatform" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">中国数字普惠金融的发展模式探究：经济与民生的视角</h4></a><div class="card-subtitle my-0 article-metadata">曾燕, 查佳婧, 杨海生, <strong>杨存奕（通讯作者）</strong></div><div class="">《经济研究》. 2024, 59(8), 39-56<br><span style="font-size: 0.95em; color: #555;">被《新华文摘》《人大复印报刊资料》《国际货币评论》《数字经济与贸易自主知识体系建构报告》转载</span></div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/cn-digital-inclusive-finance.jpg" alt="中国数字普惠金融发展模式">
+              </div></div>
 
-          </div>
         </div>
-
+      </div>
+    
       
+      <div class="card experience course">
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><h4 class="card-title exp-title text-muted my-0">数字平台推荐机制、专业化生产与消费者福利</h4><div class="card-subtitle my-0 article-metadata">廖高可, <strong>杨存奕</strong>, 顾明瑞</div><div class="">《系统工程理论与实践》. 2025, 45(10), 3323-3337</div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/cn-platform-recommendation.jpg" alt="数字平台推荐机制与消费者福利">
+              </div></div>
 
+        </div>
+      </div>
+    
+      
+      <div class="card experience course">
+        <div class="card-body">
+          <div class="featured-publication-card">
+            <div class="featured-publication-text"><a href="https://doi.org/10.12011/SETP2022-1728" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">企业金融化：最优配置、动机判别与适度区域</h4></a><div class="card-subtitle my-0 article-metadata">黄哲豪, <strong>杨存奕</strong>, 李正辉</div><div class="">《系统工程理论与实践》. 2023, 43(6), 1545-1567</div></div><div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="/img/publications/cn-corporate-financialization.jpg" alt="企业金融化最优配置">
+              </div></div>
 
-
+        </div>
+      </div>
+    
     
   </div>
 </div>
