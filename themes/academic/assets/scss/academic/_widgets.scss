@@ -95,28 +95,12 @@
 
 .section-heading h1 {
   margin: 0 0 10px 0;
-  font-size: 1.8rem;
-  line-height: 1.15;
-  overflow-wrap: normal;
-  word-break: normal;
 }
 
 .section-heading p {
   font-weight: 400;
   font-size: 1.1rem;
   color: #b2b2b2;
-}
-
-@media screen and (min-width: 992px) {
-  .home-section .section-heading.col-lg-4 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-
-  .home-section .section-heading.col-lg-4 + .col-lg-8 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
 }
 
 /*************************************************
