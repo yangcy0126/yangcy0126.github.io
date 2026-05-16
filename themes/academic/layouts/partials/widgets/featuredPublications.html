@@ -2,6 +2,47 @@
 {{ $page := .page }}
 
 <!-- Accomplishments widget -->
+<style>
+  .featured-publication-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .featured-publication-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .featured-publication-image-wrap {
+    flex: 0 0 230px;
+    max-width: 230px;
+  }
+
+  .featured-publication-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background: #fff;
+  }
+
+  @media (max-width: 767.98px) {
+    .featured-publication-card {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .featured-publication-image-wrap {
+      flex-basis: auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+</style>
+
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
     <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
@@ -12,21 +53,32 @@
 
     {{ if $page.Params.item }}
     {{ range $page.Params.item}}
+      {{ $item := . }}
       <div class="card experience course">
         <div class="card-body">
-          {{- with .publication_url -}}<a href="{{.}}" target="_blank" rel="noopener">{{- end -}}
-          <h4 class="card-title exp-title text-muted my-0">{{.publication_name | markdownify | emojify}}</h4>
-          {{- with .publication_url -}}</a>{{- end -}}
+          <div class="featured-publication-card">
+            <div class="featured-publication-text">
+              {{- with .publication_url -}}<a href="{{.}}" target="_blank" rel="noopener">{{- end -}}
+              <h4 class="card-title exp-title text-muted my-0">{{.publication_name | markdownify | emojify}}</h4>
+              {{- with .publication_url -}}</a>{{- end -}}
 
-            {{- with .writer_names -}}
-              <div class="card-subtitle my-0 article-metadata">
-                  {{- . | markdownify | emojify -}}
+                {{- with .writer_names -}}
+                  <div class="card-subtitle my-0 article-metadata">
+                      {{- . | markdownify | emojify -}}
+                  </div>
+                {{- end -}}
+
+              {{- with .organization -}}
+                  <div class="">{{ . | markdownify | emojify}}</div>
+              {{- end -}}
+            </div>
+
+            {{- with $item.image -}}
+              <div class="featured-publication-image-wrap">
+                <img class="featured-publication-image" src="{{ . | relURL }}" alt="{{ with $item.image_alt }}{{ . }}{{ else }}{{ $item.publication_name }}{{ end }}">
               </div>
             {{- end -}}
-
-          {{- with .organization -}}
-              <div class="">{{ . | markdownify | emojify}}</div>
-          {{- end -}}
+          </div>
 
         </div>
       </div>
