@@ -9,7 +9,7 @@ date_format = "Jan 2006"
 
 +++
 
-  Best Paper Award, China Fintech Research Conference, 2026
+  "Best Paper Award" at the 2026 China Fintech Research Conference (CFTRC), 2026
 
   Job Market Star, 25th China Economics Annual Conference, 2025
 
