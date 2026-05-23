@@ -9,7 +9,7 @@ date_format = "Jan 2006"
 
 +++
 
-  "Best Paper Award" at the 2026 China Fintech Research Conference (CFTRC), 2026
+  Best Paper Award, 2026 China Fintech Research Conference (CFTRC), 2026
 
   Job Market Star, 25th China Economics Annual Conference, 2025
 
@@ -19,15 +19,15 @@ date_format = "Jan 2006"
    
   Top-Ranked Paper, 13th Guangdong Provincial Award for Excellence in Financial Research, 2025
 
-  "Outstanding Paper Award" at the 22nd Conference on Financial Systems Engineering and Risk Management (FSERM), 2025
+  Outstanding Paper Award, 22nd Conference on Financial Systems Engineering and Risk Management (FSERM), 2025
 
-  "Outstanding Paper Award" at the 8th Conference on Big Data, Artificial Intelligence, and FinTech, 2025
+  Outstanding Paper Award, 8th Conference on Big Data, Artificial Intelligence, and FinTech, 2025
 
-  "Outstanding Paper Award" at the 6th Academic Annual Conference of the Quantitative Finance and Insurance Branch of the CSOOPEM, 2024
+  Lingnan College Outstanding Doctoral Student Scholarship, 2025, 2024
+
+  Outstanding Paper Award, 6th Academic Annual Conference of the Quantitative Finance and Insurance Branch of the CSOOPEM, 2024
     
   Sun Yat-sen University President's Scholarship, 2024
-  
-  Lingnan College Outstanding Doctoral Student Scholarship, 2024, 2025
   
   National Scholarship for Doctoral Students, 2024
   
