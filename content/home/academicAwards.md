@@ -9,6 +9,8 @@ date_format = "Jan 2006"
 
 +++
 
+  Best Paper Award, China Fintech Research Conference, 2026
+
   Job Market Star, 25th China Economics Annual Conference, 2025
 
   Global Top 100 Young Economists (5 years or less), RePEc/IDEAS Database, 2025
