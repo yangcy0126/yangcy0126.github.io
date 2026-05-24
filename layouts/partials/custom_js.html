@@ -1,0 +1,151 @@
+<script>
+(function () {
+  if (window.__awardCertificatePreviewInitialized) {
+    return;
+  }
+
+  window.__awardCertificatePreviewInitialized = true;
+
+  function parseEntries(trigger) {
+    var list = trigger.getAttribute("data-pdfs");
+    if (list) {
+      return list.split(";").map(function (item) {
+        var parts = item.split("|");
+        return {
+          label: parts.shift(),
+          url: parts.join("|")
+        };
+      }).filter(function (entry) {
+        return entry.url;
+      });
+    }
+
+    var url = trigger.getAttribute("data-pdf");
+    return url ? [{ label: "PDF", url: url }] : [];
+  }
+
+  function createPanel() {
+    var panel = document.createElement("div");
+    var isChinese = /^zh/i.test(document.documentElement.lang || "");
+    panel.className = "award-certificate-preview";
+    panel.setAttribute("aria-hidden", "true");
+    panel.innerHTML = [
+      '<div class="award-certificate-preview-header">',
+      "<span>" + (isChinese ? "获奖证书" : "Certificate") + "</span>",
+      '<div class="award-certificate-preview-actions"></div>',
+      "</div>",
+      '<iframe title="' + (isChinese ? "获奖证书预览" : "Award certificate preview") + '" loading="lazy"></iframe>'
+    ].join("");
+    document.body.appendChild(panel);
+    return panel;
+  }
+
+  function initAwardCertificatePreview() {
+    var triggers = Array.prototype.slice.call(document.querySelectorAll(".award-certificate-item[data-pdf], .award-certificate-item[data-pdfs]"));
+    if (!triggers.length) {
+      return;
+    }
+
+    var panel = createPanel();
+    var frame = panel.querySelector("iframe");
+    var actions = panel.querySelector(".award-certificate-preview-actions");
+    var hideTimer = null;
+    var hoverQuery = window.matchMedia("(hover: hover)");
+
+    function setActiveUrl(url) {
+      if (frame.getAttribute("src") !== url) {
+        frame.setAttribute("src", url);
+      }
+
+      Array.prototype.forEach.call(actions.querySelectorAll("a"), function (link) {
+        link.classList.toggle("is-active", link.getAttribute("href") === url);
+      });
+    }
+
+    function show(trigger) {
+      var entries = parseEntries(trigger);
+      if (!entries.length) {
+        return;
+      }
+
+      window.clearTimeout(hideTimer);
+      actions.innerHTML = "";
+      entries.forEach(function (entry, index) {
+        var link = document.createElement("a");
+        link.href = entry.url;
+        link.target = "_blank";
+        link.rel = "noopener";
+        link.textContent = entry.label || "PDF";
+        link.addEventListener("mouseenter", function () {
+          setActiveUrl(entry.url);
+        });
+        link.addEventListener("focus", function () {
+          setActiveUrl(entry.url);
+        });
+        link.addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
+        actions.appendChild(link);
+        if (index === 0) {
+          setActiveUrl(entry.url);
+        }
+      });
+
+      panel.classList.add("is-visible");
+      panel.setAttribute("aria-hidden", "false");
+    }
+
+    function hide() {
+      panel.classList.remove("is-visible");
+      panel.setAttribute("aria-hidden", "true");
+    }
+
+    function scheduleHide() {
+      window.clearTimeout(hideTimer);
+      hideTimer = window.setTimeout(hide, 160);
+    }
+
+    triggers.forEach(function (trigger) {
+      trigger.setAttribute("tabindex", "0");
+      trigger.setAttribute("role", "link");
+      trigger.addEventListener("mouseenter", function () {
+        show(trigger);
+      });
+      trigger.addEventListener("focus", function () {
+        show(trigger);
+      });
+      trigger.addEventListener("mouseleave", scheduleHide);
+      trigger.addEventListener("blur", scheduleHide);
+      trigger.addEventListener("click", function () {
+        var entries = parseEntries(trigger);
+        if (entries.length && !hoverQuery.matches) {
+          window.open(entries[0].url, "_blank", "noopener");
+        }
+      });
+      trigger.addEventListener("keydown", function (event) {
+        var entries = parseEntries(trigger);
+        if (entries.length && (event.key === "Enter" || event.key === " ")) {
+          event.preventDefault();
+          window.open(entries[0].url, "_blank", "noopener");
+        }
+      });
+    });
+
+    panel.addEventListener("mouseenter", function () {
+      window.clearTimeout(hideTimer);
+    });
+    panel.addEventListener("mouseleave", scheduleHide);
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        hide();
+      }
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAwardCertificatePreview);
+  } else {
+    initAwardCertificatePreview();
+  }
+}());
+</script>
