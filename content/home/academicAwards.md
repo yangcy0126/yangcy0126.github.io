@@ -17,13 +17,13 @@ date_format = "Jan 2006"
   
 <p class="award-certificate-item" data-pdf="files/awards/china-excellent-young-scholar-paper-finance-2025.pdf">China Excellent Young Scholar Paper Award in Finance, 2025</p>
    
-<p class="award-certificate-item" data-pdf="files/awards/guangdong-financial-research-award-2025.pdf">Top-Ranked Paper, 13th Guangdong Provincial Award for Excellence in Financial Research, 2025</p>
+<p>Top-Ranked Paper, 13th Guangdong Provincial Award for Excellence in Financial Research, 2025</p>
 
 <p class="award-certificate-item" data-pdf="files/awards/fserm-2025-high-quality-paper-award.pdf">Outstanding Paper Award, 22nd Conference on Financial Systems Engineering and Risk Management (FSERM), 2025</p>
 
 <p class="award-certificate-item" data-pdf="files/awards/big-data-ai-fintech-2025-outstanding-paper-award.pdf">Outstanding Paper Award, 8th Conference on Big Data, Artificial Intelligence, and FinTech, 2025</p>
 
-<p class="award-certificate-item" data-pdfs="2025|files/awards/lingnan-outstanding-doctoral-scholarship-2025.pdf;2024|files/awards/lingnan-outstanding-doctoral-scholarship-2024.pdf">Lingnan College Outstanding Doctoral Student Scholarship, 2025, 2024</p>
+<p>Lingnan College Outstanding Doctoral Student Scholarship, 2025, 2024</p>
 
 <p class="award-certificate-item" data-pdf="files/awards/quantitative-finance-insurance-2024-outstanding-paper-award.pdf">Outstanding Paper Award, 6th Academic Annual Conference of the Quantitative Finance and Insurance Branch of the CSOOPEM, 2024</p>
     
