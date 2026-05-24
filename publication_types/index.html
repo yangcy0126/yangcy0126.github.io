@@ -132,10 +132,136 @@
   
 
 
-  
+  <style>
+.award-certificate-item {
+  margin: 0 0 1rem;
+  transition: color 0.15s ease;
+}
 
+.award-certificate-item[data-pdf],
+.award-certificate-item[data-pdfs] {
+  cursor: help;
+}
 
+.award-certificate-item[data-pdf]:hover,
+.award-certificate-item[data-pdfs]:hover,
+.award-certificate-item[data-pdf]:focus,
+.award-certificate-item[data-pdfs]:focus {
+  color: #2962ff;
+  outline: none;
+}
 
+.award-certificate-item[data-pdf]::after,
+.award-certificate-item[data-pdfs]::after {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.04rem 0.34rem;
+  border: 1px solid rgba(41, 98, 255, 0.35);
+  border-radius: 999px;
+  color: #2962ff;
+  font-size: 0.66rem;
+  font-weight: 600;
+  line-height: 1.35;
+  vertical-align: 0.08rem;
+}
+
+.award-certificate-item[data-pdf]::after {
+  content: "PDF";
+}
+
+.award-certificate-item[data-pdfs]::after {
+  content: "PDFs";
+}
+
+.award-certificate-preview {
+  position: fixed;
+  top: 6.25rem;
+  right: 2rem;
+  z-index: 1050;
+  display: flex;
+  width: min(42vw, 540px);
+  height: min(72vh, 700px);
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(33, 37, 41, 0.16);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.22);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.award-certificate-preview.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.award-certificate-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid rgba(33, 37, 41, 0.12);
+  color: #222;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.award-certificate-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem;
+}
+
+.award-certificate-preview-actions a {
+  padding: 0.12rem 0.45rem;
+  border: 1px solid rgba(41, 98, 255, 0.35);
+  border-radius: 999px;
+  color: #2962ff;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.award-certificate-preview-actions a.is-active {
+  background: #2962ff;
+  color: #fff;
+}
+
+.award-certificate-preview iframe {
+  width: 100%;
+  flex: 1;
+  border: 0;
+  background: #f8f9fa;
+}
+
+body.dark .award-certificate-preview {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: #1f2933;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+}
+
+body.dark .award-certificate-preview-header {
+  border-bottom-color: rgba(255, 255, 255, 0.14);
+  color: #f5f7fa;
+}
+
+@media (max-width: 991.98px), (hover: none) {
+  .award-certificate-preview {
+    display: none;
+  }
+
+  .award-certificate-item[data-pdf],
+  .award-certificate-item[data-pdfs] {
+    cursor: pointer;
+  }
+}
+</style>
 
 
   <title>Publication_types | Cunyi&#39;s Homepage</title>
@@ -633,10 +759,157 @@
     
     <script src="/js/academic.min.9e159333b2de8b2229aa96e56defcd3d.js"></script>
 
-    
+    <script>
+(function () {
+  if (window.__awardCertificatePreviewInitialized) {
+    return;
+  }
 
+  window.__awardCertificatePreviewInitialized = true;
 
+  function parseEntries(trigger) {
+    var list = trigger.getAttribute("data-pdfs");
+    if (list) {
+      return list.split(";").map(function (item) {
+        var parts = item.split("|");
+        return {
+          label: parts.shift(),
+          url: parts.join("|")
+        };
+      }).filter(function (entry) {
+        return entry.url;
+      });
+    }
 
+    var url = trigger.getAttribute("data-pdf");
+    return url ? [{ label: "PDF", url: url }] : [];
+  }
+
+  function createPanel() {
+    var panel = document.createElement("div");
+    var isChinese = /^zh/i.test(document.documentElement.lang || "");
+    panel.className = "award-certificate-preview";
+    panel.setAttribute("aria-hidden", "true");
+    panel.innerHTML = [
+      '<div class="award-certificate-preview-header">',
+      "<span>" + (isChinese ? "获奖证书" : "Certificate") + "</span>",
+      '<div class="award-certificate-preview-actions"></div>',
+      "</div>",
+      '<iframe title="' + (isChinese ? "获奖证书预览" : "Award certificate preview") + '" loading="lazy"></iframe>'
+    ].join("");
+    document.body.appendChild(panel);
+    return panel;
+  }
+
+  function initAwardCertificatePreview() {
+    var triggers = Array.prototype.slice.call(document.querySelectorAll(".award-certificate-item[data-pdf], .award-certificate-item[data-pdfs]"));
+    if (!triggers.length) {
+      return;
+    }
+
+    var panel = createPanel();
+    var frame = panel.querySelector("iframe");
+    var actions = panel.querySelector(".award-certificate-preview-actions");
+    var hideTimer = null;
+    var hoverQuery = window.matchMedia("(hover: hover)");
+
+    function setActiveUrl(url) {
+      if (frame.getAttribute("src") !== url) {
+        frame.setAttribute("src", url);
+      }
+
+      Array.prototype.forEach.call(actions.querySelectorAll("a"), function (link) {
+        link.classList.toggle("is-active", link.getAttribute("href") === url);
+      });
+    }
+
+    function show(trigger) {
+      var entries = parseEntries(trigger);
+      if (!entries.length) {
+        return;
+      }
+
+      window.clearTimeout(hideTimer);
+      actions.innerHTML = "";
+      entries.forEach(function (entry, index) {
+        var link = document.createElement("a");
+        link.href = entry.url;
+        link.target = "_blank";
+        link.rel = "noopener";
+        link.textContent = entry.label || "PDF";
+        link.addEventListener("mouseenter", function () {
+          setActiveUrl(entry.url);
+        });
+        link.addEventListener("focus", function () {
+          setActiveUrl(entry.url);
+        });
+        link.addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
+        actions.appendChild(link);
+        if (index === 0) {
+          setActiveUrl(entry.url);
+        }
+      });
+
+      panel.classList.add("is-visible");
+      panel.setAttribute("aria-hidden", "false");
+    }
+
+    function hide() {
+      panel.classList.remove("is-visible");
+      panel.setAttribute("aria-hidden", "true");
+    }
+
+    function scheduleHide() {
+      window.clearTimeout(hideTimer);
+      hideTimer = window.setTimeout(hide, 160);
+    }
+
+    triggers.forEach(function (trigger) {
+      trigger.setAttribute("tabindex", "0");
+      trigger.setAttribute("role", "link");
+      trigger.addEventListener("mouseenter", function () {
+        show(trigger);
+      });
+      trigger.addEventListener("focus", function () {
+        show(trigger);
+      });
+      trigger.addEventListener("mouseleave", scheduleHide);
+      trigger.addEventListener("blur", scheduleHide);
+      trigger.addEventListener("click", function () {
+        var entries = parseEntries(trigger);
+        if (entries.length && !hoverQuery.matches) {
+          window.open(entries[0].url, "_blank", "noopener");
+        }
+      });
+      trigger.addEventListener("keydown", function (event) {
+        var entries = parseEntries(trigger);
+        if (entries.length && (event.key === "Enter" || event.key === " ")) {
+          event.preventDefault();
+          window.open(entries[0].url, "_blank", "noopener");
+        }
+      });
+    });
+
+    panel.addEventListener("mouseenter", function () {
+      window.clearTimeout(hideTimer);
+    });
+    panel.addEventListener("mouseleave", scheduleHide);
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        hide();
+      }
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAwardCertificatePreview);
+  } else {
+    initAwardCertificatePreview();
+  }
+}());
+</script>
 
 
 
