@@ -9,7 +9,7 @@ date_format = "Jan 2006"
 
 +++
 
-<p class="award-certificate-item">Best Paper Award, China Fintech Research Conference (CFTRC), 2026 <span class="award-certificate-trigger" data-pdf="files/awards/cftrc-2026-best-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
+<p class="award-certificate-item">Best Paper Award, China Fintech Research Conference, 2026 <span class="award-certificate-trigger" data-pdf="files/awards/cftrc-2026-best-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
 
 <p class="award-certificate-item">Job Market Star, China Economics Annual Conference, 2025 <span class="award-certificate-trigger" data-pdf="files/awards/china-economics-annual-conference-job-market-star-2025.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
 
@@ -19,7 +19,7 @@ date_format = "Jan 2006"
    
 <p>Top-Ranked Paper, 13th Guangdong Provincial Award for Excellence in Financial Research, 2025</p>
 
-<p class="award-certificate-item">Outstanding Paper Award, Conference on Financial Systems Engineering and Risk Management (FSERM), 2025 <span class="award-certificate-trigger" data-pdf="files/awards/fserm-2025-high-quality-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
+<p class="award-certificate-item">Outstanding Paper Award, Conference on Financial Systems Engineering and Risk Management, 2025 <span class="award-certificate-trigger" data-pdf="files/awards/fserm-2025-high-quality-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
 
 <p class="award-certificate-item">Outstanding Paper Award, Conference on Big Data, Artificial Intelligence, and FinTech, 2025 <span class="award-certificate-trigger" data-pdf="files/awards/big-data-ai-fintech-2025-outstanding-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
 

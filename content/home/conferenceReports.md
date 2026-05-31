@@ -19,7 +19,7 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 +++
-China FinTech Research Conference (CFTRC)<br>
+China FinTech Research Conference<br>
 <span style="font-size: 0.95em; color: #555;">Shenzhen 2026</span></p></li>
 
 INFORMS Conference on Service Science<br>
@@ -31,7 +31,7 @@ China Economic Annual Conference<br>
 China Finance Annual Conference<br>
 <span style="font-size: 0.95em; color: #555;">22nd in Nanjing 2025; 21st in Guangzhou 2024; 20th in Beijing 2023</span></p></li>
 
-Annual Conference of Financial Systems Engineering and Risk Management (FSERM)<br>
+Annual Conference of Financial Systems Engineering and Risk Management<br>
 <span style="font-size: 0.95em; color: #555;">22nd in Wuhu 2025; 21st in Beijing 2024</span></p></li>
 
 Greater Bay Area Digital Finance Forum<br>
