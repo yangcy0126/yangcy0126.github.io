@@ -22,6 +22,9 @@ date_format = "Jan 2006"
 China FinTech Research Conference (CFTRC)<br>
 <span style="font-size: 0.95em; color: #555;">Shenzhen 2026</span></p></li>
 
+INFORMS Conference on Service Science<br>
+<span style="font-size: 0.95em; color: #555;">Hangzhou 2026</span></p></li>
+
 China Economic Annual Conference<br>
 <span style="font-size: 0.95em; color: #555;">25th in Shanghai 2025; 24th in Beijing 2024</span></p></li>
 
