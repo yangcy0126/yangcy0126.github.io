@@ -52,9 +52,6 @@ Quarterly Journal of Finance Forum<br>
 Annual Academic Conference of the China Information Economics Association<br>
 <span style="font-size: 0.95em; color: #555;">36th in Beijing 2024</span></p></li>
 
-Theoretical Foundations of Digital Economy Forum<br>
-<span style="font-size: 0.95em; color: #555;">1st in Beijing 2024</span></p></li>
-
 Internet and Digital Economy Forum<br>
 <span style="font-size: 0.95em; color: #555;">6th in Beijing 2024; 5th in Changsha 2023</span></p></li>
 
