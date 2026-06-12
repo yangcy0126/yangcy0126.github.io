@@ -2,8 +2,8 @@
   "name": "Cunyi's Homepage",
   "short_name": "Cunyi's Homepage",
   "lang": "en-us",
-  "theme_color": "#2962ff",
-  "background_color": "#2962ff",
+  "theme_color": "#0056A2",
+  "background_color": "#0056A2",
   "icons": [{
     "src": "../img/icon-192.png",
     "sizes": "192x192",
