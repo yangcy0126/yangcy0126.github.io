@@ -74,13 +74,6 @@ date_format = "Jan 2006"
   image = "img/publications/esg-green-innovation.jpg"
   image_alt = "ESG ratings and green innovation"
 
-[[item]]
-  publication_name = "The impact of fintech on corporate carbon emissions: Towards green and sustainable development"
-  publication_url = "https://onlinelibrary.wiley.com/doi/full/10.1002/bse.3778"
-  writer_names = "Wang, C., Wang, L., Zhao, S., <strong>Yang, C*</strong>., Albitar, K."
-  organization = "_Business Strategy and the Environment_. 2024, 33(6), 5776-5796"
-  image = "img/publications/fintech-carbon-emissions-v2.jpg"
-  image_alt = "FinTech and corporate carbon emissions framework"
 
 
 
