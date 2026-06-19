@@ -49,9 +49,6 @@ Frontier Symposium on Autonomous Knowledge System in Digital Finance<br>
 Annual Conference of the Quantitative Finance and Insurance Section of the Chinese Society of Optimization, Overall Planning and Economic Mathematics<br>
 <span style="font-size: 0.95em; color: #555;">7th in Kunming 2025; 6th in Nanjing 2024; 5th in Wuhan 2023</span></p></li>
 
-Quarterly Journal of Finance Forum<br>
-<span style="font-size: 0.95em; color: #555;">3rd in Guangzhou 2025; 1st in Guangzhou 2023</span></p></li>
-
 Annual Academic Conference of the China Information Economics Association<br>
 <span style="font-size: 0.95em; color: #555;">36th in Beijing 2024</span></p></li>
 
