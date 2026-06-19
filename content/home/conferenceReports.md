@@ -40,6 +40,9 @@ Greater Bay Area Digital Finance Forum<br>
 Conference on Big Data, Artificial Intelligence, and FinTech<br>
 <span style="font-size: 0.95em; color: #555;">8th in Guangzhou 2025</span></p></li>
 
+Chinese Young Economists Forum<br>
+<span style="font-size: 0.95em; color: #555;">Chengdu 2025</span></p></li>
+
 Frontier Symposium on Autonomous Knowledge System in Digital Finance<br>
 <span style="font-size: 0.95em; color: #555;">1st in Guangzhou 2025</span></p></li>
 
