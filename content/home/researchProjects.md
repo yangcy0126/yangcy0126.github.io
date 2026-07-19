@@ -3,7 +3,7 @@ widget = "academicAwards"  # See https://sourcethemes.com/academic/docs/page-bui
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 91  # Order that this section will appear.
-title = "RESEARCH PROJECTS (PARTICIPANT)"
+title = "PROJECT PARTICIPATION"
 subtitle = ""
 date_format = "Jan 2006"
 
