@@ -11,7 +11,7 @@ date_format = "Jan 2006"
 <h2>In Progress</h2>
 <ul style="padding-left: 1.2em;">
   <li><p style="margin-bottom: 1em;">Theoretical and Policy Research on Closely Integrating Investment in Physical Assets with Investment in Human Capital<br>
-  <span style="font-size: 0.95em; color: #555;">Major Project of the National Social Science Fund</span></p></li>
+  <span style="font-size: 0.95em; color: #555;">Major Project of the National Social Science Fund (No. 26ZDA032)</span></p></li>
 
   <li><p style="margin-bottom: 1em;">Research on Financial Digitalization and Financial Risk Governance<br>
   <span style="font-size: 0.95em; color: #555;">Key Project of the National Social Science Fund (No. 24AZD019)</span></p></li>
