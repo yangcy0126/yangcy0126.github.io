@@ -36,7 +36,7 @@ date_format = "Jan 2006"
 
 [[item]]
   publication_name = "数字普惠金融减轻居民维系社会资本的负担——来自人情礼支出的证据"
-  publication_url = ""
+  publication_url = "https://cjoe.cjoe.ac.cn/CN/10.12012/CJoE2025-0613"
   writer_names = "曾燕, 张书驰, **杨存奕（通讯作者）**"
   organization = "《计量经济学报》. 2026, 6(4), 1083-1100"
   image = "img/publications/cn-social-capital-burden.png"
