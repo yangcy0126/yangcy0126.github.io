@@ -61,7 +61,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto:yangcy9@mail2.sysu.edu.cn
+  link: mailto:cunyi@hku.hk
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=dI8p98sAAAAJ&hl=en
