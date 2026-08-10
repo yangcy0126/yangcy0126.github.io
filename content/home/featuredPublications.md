@@ -20,7 +20,7 @@ date_format = "Jan 2006"
 
 [[item]]
   publication_name = "Bank digitalization, liquidity allocation and consumption inequality"
-  publication_url = ""
+  publication_url = "https://doi.org/10.1016/j.jbankfin.2026.107798"
   writer_names = "**Yang, C.**, Wu, J."
   organization = "_Journal of Banking and Finance_. 2026, forthcoming"
   image = "img/publications/bank-liquidity-consumption-inequality.jpg"
