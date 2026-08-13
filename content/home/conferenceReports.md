@@ -19,11 +19,14 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 +++
-China FinTech Research Conference<br>
-<span style="font-size: 0.95em; color: #555;">Shenzhen 2026</span></p></li>
+Annual Conference of the Quantitative Finance and Insurance Section of the Chinese Society of Optimization, Overall Planning and Economic Mathematics<br>
+<span style="font-size: 0.95em; color: #555;">8th in Yinchuan 2026; 7th in Kunming 2025; 6th in Nanjing 2024; 5th in Wuhan 2023</span></p></li>
 
 INFORMS Conference on Service Science<br>
 <span style="font-size: 0.95em; color: #555;">Hangzhou 2026</span></p></li>
+
+China FinTech Research Conference<br>
+<span style="font-size: 0.95em; color: #555;">Shenzhen 2026</span></p></li>
 
 China Economic Annual Conference<br>
 <span style="font-size: 0.95em; color: #555;">25th in Shanghai 2025; 24th in Beijing 2024</span></p></li>
@@ -45,9 +48,6 @@ Chinese Young Economists Forum<br>
 
 Frontier Symposium on Autonomous Knowledge System in Digital Finance<br>
 <span style="font-size: 0.95em; color: #555;">1st in Guangzhou 2025</span></p></li>
-
-Annual Conference of the Quantitative Finance and Insurance Section of the Chinese Society of Optimization, Overall Planning and Economic Mathematics<br>
-<span style="font-size: 0.95em; color: #555;">8th in Yinchuan 2026; 7th in Kunming 2025; 6th in Nanjing 2024; 5th in Wuhan 2023</span></p></li>
 
 Annual Academic Conference of the China Information Economics Association<br>
 <span style="font-size: 0.95em; color: #555;">36th in Beijing 2024</span></p></li>
