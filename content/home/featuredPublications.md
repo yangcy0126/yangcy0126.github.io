@@ -43,14 +43,6 @@ date_format = "Jan 2006"
   image_alt = "Bank digitalization and inclusive finance"
 
 [[item]]
-  publication_name = "The relationship between FinTech and energy markets in China"
-  publication_url = "https://doi.org/10.1016/j.techfore.2025.124188"
-  writer_names = "Huang, Y., Zhou, Q., <strong>Yang, C*</strong>., Albitar, K."
-  organization = "_Technological Forecasting and Social Change_. 2025, 217, 124188"
-  image = "img/publications/fintech-energy-markets.jpg"
-  image_alt = "FinTech and energy markets in China"
-  
-[[item]]
   publication_name = "Climate transition risk and industry returns: The impact of green innovation and carbon market uncertainty"
   publication_url = "https://doi.org/10.1016/j.techfore.2025.124056"
   writer_names = "Zhou, Q., Ni, J., <strong>Yang, C*</strong>."
