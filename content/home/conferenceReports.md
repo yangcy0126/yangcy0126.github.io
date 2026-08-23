@@ -19,6 +19,9 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 +++
+Frontier Symposium on Autonomous Knowledge System in Digital Finance<br>
+<span style="font-size: 0.95em; color: #555;">Guangzhou 2026; Guangzhou 2025</span></p></li>
+
 CSOOPEM Quantitative Finance and Insurance Annual Conference<br>
 <span style="font-size: 0.95em; color: #555;">Yinchuan 2026; Kunming 2025; Nanjing 2024; Wuhan 2023</span></p></li>
 
@@ -45,9 +48,6 @@ Conference on Big Data, Artificial Intelligence, and FinTech<br>
 
 Chinese Young Economists Forum<br>
 <span style="font-size: 0.95em; color: #555;">Chengdu 2025</span></p></li>
-
-Frontier Symposium on Autonomous Knowledge System in Digital Finance<br>
-<span style="font-size: 0.95em; color: #555;">Guangzhou 2025</span></p></li>
 
 Annual Academic Conference of the China Information Economics Association<br>
 <span style="font-size: 0.95em; color: #555;">Beijing 2024</span></p></li>
