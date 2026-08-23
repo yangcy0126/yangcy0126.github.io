@@ -19,7 +19,7 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 +++
-Annual Conference of the Quantitative Finance and Insurance Section of the Chinese Society of Optimization, Overall Planning and Economic Mathematics<br>
+CSOOPEM Quantitative Finance and Insurance Annual Conference<br>
 <span style="font-size: 0.95em; color: #555;">Yinchuan 2026; Kunming 2025; Nanjing 2024; Wuhan 2023</span></p></li>
 
 INFORMS Conference on Service Science<br>

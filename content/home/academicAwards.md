@@ -23,7 +23,7 @@ date_format = "Jan 2006"
 
 <p>Outstanding Paper Award, Conference on Big Data, Artificial Intelligence, and FinTech, 2025</p>
 
-<p class="award-certificate-item">Outstanding Paper Award, Academic Annual Conference of the Quantitative Finance and Insurance Branch of the CSOOPEM, 2024 <span class="award-certificate-trigger" data-pdf="files/awards/quantitative-finance-insurance-2024-outstanding-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
+<p class="award-certificate-item">Outstanding Paper Award, CSOOPEM Quantitative Finance and Insurance Annual Conference, 2024 <span class="award-certificate-trigger" data-pdf="files/awards/quantitative-finance-insurance-2024-outstanding-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
     
 <p>Sun Yat-sen University President's Scholarship, 2024</p>
   
