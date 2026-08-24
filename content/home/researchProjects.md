@@ -8,7 +8,6 @@ subtitle = ""
 date_format = "Jan 2006"
 
 +++
-<h2>In Progress</h2>
 <ul style="padding-left: 1.2em;">
   <li><p style="margin-bottom: 1em;">Theoretical and Policy Research on Closely Integrating Investment in Physical Assets with Investment in Human Capital<br>
   <span style="font-size: 0.95em; color: #555;">Major Project of the National Social Science Fund (No. 26ZDA032)</span></p></li>
@@ -24,10 +23,6 @@ date_format = "Jan 2006"
   
   <li><p style="margin-bottom: 1em;">Research on Insurance Asset Allocation Based on Green Development<br>
   <span style="font-size: 0.95em; color: #555;">National Natural Science Foundation Project (No. 72371256)</span></p></li>
-</ul>
-
-<h2>Completed</h2>
-<ul style="padding-left: 1.2em;">
   <li><p style="margin-bottom: 1em;">The Crowding-Out Effect of Corporate Financialization on R&D Innovation and Its Motivation<br>
   <span style="font-size: 0.95em; color: #555;">General Project of the National Social Science Fund (No. 21CTJ013)</span></p></li>
  
