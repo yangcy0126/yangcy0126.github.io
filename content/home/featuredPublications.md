@@ -43,14 +43,6 @@ date_format = "Jan 2006"
   image_alt = "Bank digitalization and inclusive finance"
 
 [[item]]
-  publication_name = "Climate transition risk and industry returns: The impact of green innovation and carbon market uncertainty"
-  publication_url = "https://doi.org/10.1016/j.techfore.2025.124056"
-  writer_names = "Zhou, Q., Ni, J., <strong>Yang, C*</strong>."
-  organization = "_Technological Forecasting and Social Change_. 2025, 214, 124056"
-  image = "img/publications/climate-transition-risk.jpg"
-  image_alt = "Climate transition risk and industry returns"
-
-[[item]]
   publication_name = "Government in the digital age: Exploring the impact of digital transformation on governmental efficiency"
   publication_url = "https://doi.org/10.1016/j.techfore.2024.123722"
   writer_names = "**Yang, C.**, Gu, M., Albitar, K."

@@ -11,13 +11,15 @@ date_format = "Jan 2006"
 
 <p class="award-certificate-item">Best Paper Award, China Fintech Research Conference, 2026 <span class="award-certificate-trigger" data-pdf="files/awards/cftrc-2026-best-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
 
-<p class="award-certificate-item">Job Market Star, China Economic Annual Conference, 2025 <span class="award-certificate-trigger" data-pdf="files/awards/china-economics-annual-conference-job-market-star-2025.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
+<p>Outstanding Ph.D. Graduate, Sun Yat-sen University, 2026</p>
+
+<p class="award-certificate-item">Job Market Star, 25th China Economic Annual Conference, 2025 <span class="award-certificate-trigger" data-pdf="files/awards/china-economics-annual-conference-job-market-star-2025.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
 
 <p class="award-certificate-item">Global Top 100 Young Economists (5 years or less), RePEc/IDEAS, 2025 <span class="award-certificate-trigger" data-pdf="files/awards/repec-ideas-young-economists-2025.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
   
 <p class="award-certificate-item">China Excellent Young Scholar Paper Award in Finance, 2025 <span class="award-certificate-trigger" data-pdf="files/awards/china-excellent-young-scholar-paper-finance-2025.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
    
-<p>Top-Ranked Paper, 13th Guangdong Provincial Award for Excellence in Financial Research, 2025</p>
+<p>Top-ranked Paper, The 13th Guangdong Provincial Award for Excellence in Financial Research, 2025</p>
 
 <p class="award-certificate-item">Outstanding Paper Award, Conference on Financial Systems Engineering and Risk Management, 2025 <span class="award-certificate-trigger" data-pdf="files/awards/fserm-2025-high-quality-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
 
@@ -29,7 +31,7 @@ date_format = "Jan 2006"
   
 <p class="award-certificate-item">National Scholarship for Doctoral Students, 2024 <span class="award-certificate-trigger" data-pdf="files/awards/doctoral-national-scholarship-2024.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
   
-<p class="award-certificate-item">National Scholarship for Master's Students, 2021 <span class="award-certificate-trigger" data-pdf="files/awards/masters-national-scholarship-2021.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
+<p class="award-certificate-item">National Scholarship for Master Students, 2021 <span class="award-certificate-trigger" data-pdf="files/awards/masters-national-scholarship-2021.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
   
 
 

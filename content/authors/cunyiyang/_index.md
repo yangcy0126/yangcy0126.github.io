@@ -24,9 +24,9 @@ bio: <The continued advancement of digital technologies is inevitable, and ensur
 
 
 interests:
-- Digital finance and risk management
-- Digital transformation and economic welfare
-- FinTech, energy markets, and climate risk
+- Digital Finance
+- Financial Risk
+- Green Finance
 
 education:
   courses:
@@ -40,13 +40,13 @@ education:
     institution: Sun Yat-sen University
     year:
     advisor: Yan Zeng
-    advisor_link: "https://scholar.google.com/citations?hl=en&user=Yebjil0AAAAJ"
+    advisor_link: "https://lingnan.sysu.edu.cn/faculty/ZengYan"
     
   - course: M.A. in Finance
     institution: Guangzhou University
     year:
     advisor: Zhenghui Li
-    advisor_link: "https://www.researchgate.net/profile/Zhenghui-Li-2"
+    advisor_link: "https://ses.gzhu.edu.cn/info/1931/10441.htm"
     
   - course: B.A. in Finance
     institution: Wuhan University of Technology
