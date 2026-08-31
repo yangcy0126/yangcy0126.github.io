@@ -19,6 +19,9 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 +++
+China Finance Annual Conference<br>
+<span style="font-size: 0.95em; color: #555;">Tianjin 2026; Nanjing 2025; Guangzhou 2024; Beijing 2023</span></p></li>
+
 China Economic Annual Conference<br>
 <span style="font-size: 0.95em; color: #555;">Beijing 2026; Shanghai 2025; Beijing 2024</span></p></li>
 
@@ -33,9 +36,6 @@ INFORMS Conference on Service Science<br>
 
 China FinTech Research Conference<br>
 <span style="font-size: 0.95em; color: #555;">Shenzhen 2026</span></p></li>
-
-China Finance Annual Conference<br>
-<span style="font-size: 0.95em; color: #555;">Tianjin 2026; Nanjing 2025; Guangzhou 2024; Beijing 2023</span></p></li>
 
 Annual Conference of Financial Systems Engineering and Risk Management<br>
 <span style="font-size: 0.95em; color: #555;">Wuhu 2025; Beijing 2024</span></p></li>
