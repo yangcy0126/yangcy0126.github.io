@@ -22,7 +22,7 @@ date_format = "Jan 2006"
 [[item]]
   publication_name = "_Industrial Digital Finance Empowering Real Economy Development_"
   publication_url = ""
-  writer_names = "Chapter 5"
+  writer_names = "Chapter 6"
   organization = "Peking University Press, Pre-publication"
  
 
