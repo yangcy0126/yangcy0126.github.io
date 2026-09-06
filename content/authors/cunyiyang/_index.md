@@ -88,4 +88,8 @@ email: ""
 #- Visitors
 ---
 
-I am a URC Postdoctoral Fellow at HKU Business School, The University of Hong Kong. My work has appeared in *Journal of Banking and Finance*, *Financial Review*, *Journal of Business Research*, and *Technological Forecasting and Social Change*, among others. I serve as an Assistant Editor of *International Review of Finance*.
+I am a URC Postdoctoral Fellow at HKU Business School, The University of Hong Kong.
+
+My work has appeared in *Journal of Banking and Finance*, *Financial Review*, *Journal of Business Research*, and *Technological Forecasting and Social Change*, among others.
+
+I serve as an Assistant Editor of *International Review of Finance*.
