@@ -27,6 +27,11 @@ date_format = "Jan 2006"
   image_alt = "Bank digitalization, liquidity allocation, and consumption inequality"
 
 [[item]]
+  publication_name = "The Bias of Digital Transformation: Intangible Capital, Markup, and Misallocation"
+  writer_names = "Gu, M., <strong>Yang, C*</strong>."
+  organization = "_Journal of Banking and Finance_. Minor"
+
+[[item]]
   publication_name = "The Allocative Channel of Digital Transformation: Information Precision and Production-Network Spillovers"
   publication_url = "https://doi.org/10.1016/j.jbusres.2026.116237"
   writer_names = "Gu, M., <strong>Yang, C*</strong>."
