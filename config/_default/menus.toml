@@ -24,6 +24,11 @@
   weight = 45
 
 [[main]]
+  name = "Policy Advisory"
+  url = "#policyAdvisory"
+  weight = 46
+
+[[main]]
   name = "Awards"
   url = "#academicAwards"
   weight = 40
