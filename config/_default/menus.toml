@@ -24,7 +24,7 @@
   weight = 45
 
 [[main]]
-  name = "Policy Advisory"
+  name = "Advisory"
   url = "#policyAdvisory"
   weight = 46
 
