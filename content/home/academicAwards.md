@@ -9,6 +9,8 @@ date_format = "Jan 2006"
 
 +++
 
+<p class="award-certificate-item">First Prize for Best Paper, China Finance Annual Conference, 2026 <span class="award-certificate-trigger" data-pdf="files/awards/china-finance-annual-conference-best-paper-first-prize-2026.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
+
 <p class="award-certificate-item">Best Paper Award, China Fintech Research Conference, 2026 <span class="award-certificate-trigger" data-pdf="files/awards/cftrc-2026-best-paper-award.pdf" title="Preview certificate PDF" aria-label="Preview certificate PDF">PDF</span></p>
 
 <p>Outstanding Ph.D. Graduate, Sun Yat-sen University, 2026</p>
