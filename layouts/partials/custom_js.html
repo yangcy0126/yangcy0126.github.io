@@ -1,5 +1,53 @@
 <script>
 (function () {
+  function initLanguageSwitcher() {
+    var root = document.querySelector("#navbar-main .i18n-dropdown");
+    if (!root || root.classList.contains("language-switcher-ready")) {
+      return;
+    }
+
+    var menu = root.querySelector(".dropdown-menu");
+    var toggle = root.querySelector(".dropdown-toggle");
+    if (!menu) {
+      return;
+    }
+
+    var currentPath = window.location.pathname;
+    var currentHash = window.location.hash;
+    var isChineseCurrent = /^zh/i.test(document.documentElement.lang || "") || /\/cn(?:\/|$)/.test(currentPath);
+
+    Array.prototype.forEach.call(menu.querySelectorAll("a[href]"), function (link) {
+      var href = link.getAttribute("href") || "";
+      var isChinese = /\/cn(?:\/|$)/.test(href);
+      var target = isChinese ? "/cn/" : "/";
+      link.textContent = isChinese ? "中文" : "EN";
+      link.classList.add("language-switcher-option");
+      link.href = target + currentHash;
+      if (isChinese === isChineseCurrent) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+
+    if (toggle) {
+      toggle.setAttribute("aria-hidden", "true");
+      toggle.setAttribute("tabindex", "-1");
+    }
+
+    root.classList.add("language-switcher", "language-switcher-ready");
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initLanguageSwitcher);
+  } else {
+    initLanguageSwitcher();
+  }
+}());
+</script>
+
+<script>
+(function () {
   if (window.__awardCertificatePreviewInitialized) {
     return;
   }

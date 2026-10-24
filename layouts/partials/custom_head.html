@@ -17,6 +17,67 @@
   font-size: 16px;
 }
 
+.language-switcher > .dropdown-toggle {
+  display: none;
+}
+
+.language-switcher > .dropdown-menu {
+  position: static;
+  display: inline-flex !important;
+  align-items: center;
+  min-width: 0;
+  margin: 0;
+  padding: 0.2rem;
+  border: 1px solid rgba(0, 86, 162, 0.22);
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: none;
+  transform: none !important;
+}
+
+.language-switcher .language-switcher-option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.55rem;
+  margin: 0;
+  padding: 0.27rem 0.58rem;
+  border-radius: 999px;
+  color: #506174;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.language-switcher .language-switcher-option:hover,
+.language-switcher .language-switcher-option:focus {
+  background: rgba(0, 86, 162, 0.1);
+  color: #0056A2;
+  text-decoration: none;
+}
+
+.language-switcher .language-switcher-option[aria-current="page"] {
+  background: #0056A2;
+  color: #fff;
+}
+
+body.dark .language-switcher > .dropdown-menu {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: #1f2933;
+}
+
+body.dark .language-switcher .language-switcher-option {
+  color: #d8e0e8;
+}
+
+body.dark .language-switcher .language-switcher-option:hover,
+body.dark .language-switcher .language-switcher-option:focus {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
 .award-certificate-item {
   margin: 0 0 1rem;
 }
