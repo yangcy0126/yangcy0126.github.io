@@ -15,6 +15,7 @@
     var currentPath = window.location.pathname;
     var currentHash = window.location.hash;
     var isChineseCurrent = /^zh/i.test(document.documentElement.lang || "") || /\/cn(?:\/|$)/.test(currentPath);
+    root.setAttribute("data-current-language", isChineseCurrent ? "zh" : "en");
 
     Array.prototype.forEach.call(menu.querySelectorAll("a[href]"), function (link) {
       var href = link.getAttribute("href") || "";
