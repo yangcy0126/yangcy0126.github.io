@@ -170,20 +170,40 @@
 }
 
 .language-switcher > .dropdown-menu {
-  position: static !important;
+  position: relative !important;
   top: auto !important;
   right: auto !important;
   left: auto !important;
-  display: inline-flex !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
   align-items: center;
   min-width: 0;
   margin: 0;
-  padding: 0.15rem;
-  border: 1px solid #b7c9d9;
+  padding: 3px;
+  border: 1px solid #dfdfdf;
   border-radius: 999px;
   background: #fff;
-  box-shadow: 0 1px 3px rgba(31, 50, 75, 0.12);
+  box-shadow: none;
+  overflow: visible;
   transform: none !important;
+}
+
+.language-switcher > .dropdown-menu::before {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  width: calc((100% - 10px) / 2);
+  border-radius: 999px;
+  background: #0056A2;
+  content: "";
+  pointer-events: none;
+  transition: transform 0.18s ease;
+}
+
+.language-switcher[data-current-language="zh"] > .dropdown-menu::before {
+  transform: translateX(calc(100% + 4px));
 }
 
 .nav-icons .language-switcher {
@@ -193,37 +213,38 @@
 }
 
 .language-switcher .language-switcher-option {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 2.55rem;
+  width: 100%;
+  min-width: 0;
   margin: 0;
-  padding: 0.24rem 0.58rem;
+  padding: 0.3rem 0.55rem;
   border-radius: 999px;
   color: #506174;
+  background: transparent !important;
   font-size: 0.78rem;
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition: color 0.18s ease;
 }
 
 .language-switcher .language-switcher-option:hover,
 .language-switcher .language-switcher-option:focus {
-  background: rgba(0, 86, 162, 0.1);
   color: #0056A2;
   text-decoration: none;
 }
 
 .language-switcher .language-switcher-option[aria-current="page"] {
-  background: #0056A2;
-  color: #fff;
+  color: #fff !important;
 }
 
 body.dark .language-switcher > .dropdown-menu {
   border-color: rgba(255, 255, 255, 0.22);
   background: #1f2933;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
 }
 
 body.dark .language-switcher .language-switcher-option {
@@ -2123,6 +2144,7 @@ body.dark .award-certificate-preview-header {
     var currentPath = window.location.pathname;
     var currentHash = window.location.hash;
     var isChineseCurrent = /^zh/i.test(document.documentElement.lang || "") || /\/cn(?:\/|$)/.test(currentPath);
+    root.setAttribute("data-current-language", isChineseCurrent ? "zh" : "en");
 
     Array.prototype.forEach.call(menu.querySelectorAll("a[href]"), function (link) {
       var href = link.getAttribute("href") || "";
