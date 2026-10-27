@@ -73,7 +73,7 @@
 # About widget
 
 - id: interests
-  translation: Research Interests
+  translation: Interests
 
 - id: education
   translation: Education
