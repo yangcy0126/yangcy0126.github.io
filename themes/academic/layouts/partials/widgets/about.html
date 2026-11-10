@@ -68,7 +68,7 @@
     <div class="row">
 
       {{ with $person.interests }}
-      <div class="col-md-5">
+      <div class="col-md-4">
         <h3>{{ i18n "interests" | markdownify }}</h3>
         <ul class="ul-interests">
           {{ range . }}
@@ -79,7 +79,7 @@
       {{ end }}
 
       {{ with $person.education }}
-      <div class="col-md-7">
+      <div class="col-md-8">
         <h3>{{ i18n "education" | markdownify }}</h3>
         <ul class="ul-edu fa-ul">
           {{ range .courses }}
@@ -87,17 +87,15 @@
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
               <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
-              <p class="institution">{{ .institution }}</p>
-              {{ if .advisor }}
-                <p class="advisor" style="font-size: 16px; font-weight: normal;">
-                  <span>Advisor:</span>
+              <p class="institution">
+                {{ .institution }}{{ if .advisor }}, <span>Advisor:</span>
                   {{ if .advisor_link }}
                     <a href="{{ .advisor_link }}" target="_blank" rel="noopener" style="font-size: 16px; font-weight: normal;">{{ .advisor }}</a>
                   {{ else }}
                     <span style="font-size: 16px; font-weight: normal;">{{ .advisor }}</span>
                   {{ end }}
-                </p>
-              {{ end }}
+                {{ end }}
+              </p>
             </div>
           </li>
           {{ end }}
