@@ -146,7 +146,27 @@
   
 
 
-  <style>
+  <script>
+(function () {
+  function restoreTheme() {
+    if (!document.body) return;
+    var saved = null;
+    try { saved = localStorage.getItem("dark_mode"); } catch (error) {}
+    var dark = saved === null ?
+      document.body.classList.contains("dark") || window.matchMedia("(prefers-color-scheme: dark)").matches :
+      saved === "1";
+    document.body.classList.toggle("dark", dark);
+    var icon = document.querySelector(".js-dark-toggle i");
+    if (icon) {
+      icon.classList.toggle("fa-sun", dark);
+      icon.classList.toggle("fa-moon", !dark);
+    }
+  }
+  window.addEventListener("pagereveal", restoreTheme, { once: true });
+  document.addEventListener("DOMContentLoaded", restoreTheme, { once: true });
+}());
+</script>
+<style>
 #about .col-12.col-lg-8 > p {
   margin-bottom: 0.4rem;
 }
@@ -165,9 +185,30 @@
   font-size: 16px;
 }
 
-.language-switcher > .dropdown-toggle {
-  display: none;
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
 }
+
+::view-transition-old(root),
+::view-transition-new(root),
+::view-transition-group(language-switcher-thumb) {
+  animation-duration: 0.2s;
+  animation-timing-function: ease;
+}
+
+.home-section {
+  scroll-margin-top: 70px;
+}
+
+@media (max-width: 991.98px) {
+  .home-section {
+    scroll-margin-top: 50px;
+  }
+}
+
 
 .language-switcher > .dropdown-menu {
   position: relative !important;
@@ -189,7 +230,7 @@
   transform: none !important;
 }
 
-.language-switcher > .dropdown-menu::before {
+.language-switcher-thumb {
   position: absolute;
   top: 3px;
   bottom: 3px;
@@ -197,12 +238,12 @@
   width: calc((100% - 10px) / 2);
   border-radius: 999px;
   background: #0056A2;
-  content: "";
   pointer-events: none;
-  transition: transform 0.18s ease;
+  view-transition-name: language-switcher-thumb;
+  transition: transform 0.2s ease;
 }
 
-.language-switcher[data-current-language="zh"] > .dropdown-menu::before {
+.language-switcher[data-current-language="zh"] .language-switcher-thumb {
   transform: translateX(calc(100% + 4px));
 }
 
@@ -234,7 +275,7 @@
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
-  transition: color 0.18s ease;
+  transition: color 0.2s ease;
 }
 
 .language-switcher .language-switcher-option:hover,
@@ -245,6 +286,18 @@
 
 .language-switcher .language-switcher-option[aria-current="page"] {
   color: #fff !important;
+}
+
+.language-switcher .language-switcher-option:focus-visible {
+  outline: 2px solid #0056A2;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-switcher-thumb,
+  .language-switcher .language-switcher-option {
+    transition: none;
+  }
 }
 
 body.dark .language-switcher > .dropdown-menu {
@@ -722,20 +775,11 @@ body.dark .award-certificate-preview-header {
 
 
 
-        
-      <li class="nav-item dropdown i18n-dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-            
-          <i class="fas fa-language mr-1" aria-hidden="true"></i><span class="d-none d-lg-inline"> </span>
-        </a>
-        <div class="dropdown-menu">
-            
-          <a class="dropdown-item  i18n-active" href="/" >
-            <span>En</span>
-          </a>
-          <a class="dropdown-item " href="/cn" >
-            <span>Cn</span>
-          </a>
+      <li class="nav-item i18n-dropdown language-switcher" data-current-language="en">
+        <div class="dropdown-menu" role="group" aria-label="Language">
+          <span class="language-switcher-thumb" aria-hidden="true"></span>
+          <a class="dropdown-item language-switcher-option" data-language="en" href="/" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a>
+          <a class="dropdown-item language-switcher-option" data-language="zh" href="/cn/" lang="zh" hreflang="zh" aria-label="中文">中文</a>
         </div>
       </li>
 
@@ -2053,37 +2097,112 @@ body.dark .award-certificate-preview-header {
       return;
     }
 
-    var menu = root.querySelector(".dropdown-menu");
-    var toggle = root.querySelector(".dropdown-toggle");
-    if (!menu) {
-      return;
+    var currentLanguage = root.getAttribute("data-current-language");
+    var links = Array.prototype.slice.call(root.querySelectorAll("a[data-language]"));
+    var sections = Array.prototype.slice.call(document.querySelectorAll(".home-section[id]"));
+    var navbar = document.getElementById("navbar-main");
+    var updatePending = false;
+    var prefetched = false;
+
+    function showLanguage(language) {
+      root.setAttribute("data-current-language", language);
+      links.forEach(function (link) {
+        if (link.getAttribute("data-language") === language) {
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
     }
 
-    var currentPath = window.location.pathname;
-    var currentHash = window.location.hash;
-    var isChineseCurrent = /^zh/i.test(document.documentElement.lang || "") || /\/cn(?:\/|$)/.test(currentPath);
-    root.setAttribute("data-current-language", isChineseCurrent ? "zh" : "en");
+    function currentSection() {
+      var id = "";
+      var readingLine = navbar.getBoundingClientRect().bottom + 80;
+      sections.forEach(function (section) {
+        if (section.getBoundingClientRect().top <= readingLine) {
+          id = section.id;
+        }
+      });
+      return id === "about" ? "" : id;
+    }
 
-    Array.prototype.forEach.call(menu.querySelectorAll("a[href]"), function (link) {
-      var href = link.getAttribute("href") || "";
-      var isChinese = /\/cn(?:\/|$)/.test(href);
-      var target = isChinese ? "/cn/" : "/";
-      link.textContent = isChinese ? "中文" : "EN";
-      link.classList.add("language-switcher-option");
-      link.href = target + currentHash;
-      if (isChinese === isChineseCurrent) {
-        link.setAttribute("aria-current", "page");
-      } else {
-        link.removeAttribute("aria-current");
+    function updateLinks() {
+      var section = currentSection();
+      links.forEach(function (link) {
+        var isChinese = link.getAttribute("data-language") === "zh";
+        
+        var targetSection = isChinese && section === "contributionsInChinese" ? "featuredPublications" : section;
+        link.href = (isChinese ? "/cn/" : "/") + (targetSection ? "#" + targetSection : "");
+      });
+      updatePending = false;
+    }
+
+    function scheduleUpdate() {
+      if (!updatePending) {
+        updatePending = true;
+        window.requestAnimationFrame(updateLinks);
       }
+    }
+
+    function prefetchLanguage(link) {
+      updateLinks();
+      if (prefetched || link.getAttribute("data-language") === currentLanguage ||
+          (navigator.connection && navigator.connection.saveData)) {
+        return;
+      }
+      var hint = document.createElement("link");
+      hint.rel = "prefetch";
+      hint.href = link.pathname;
+      document.head.appendChild(hint);
+      prefetched = true;
+    }
+
+    links.forEach(function (link) {
+      ["pointerenter", "focus", "pointerdown"].forEach(function (eventName) {
+        link.addEventListener(eventName, function () { prefetchLanguage(link); });
+      });
+      link.addEventListener("click", function (event) {
+        updateLinks();
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+          return;
+        }
+        var language = link.getAttribute("data-language");
+        if (language === currentLanguage) {
+          event.preventDefault();
+          return;
+        }
+        showLanguage(language);
+      });
     });
 
-    if (toggle) {
-      toggle.setAttribute("aria-hidden", "true");
-      toggle.setAttribute("tabindex", "-1");
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    window.addEventListener("pageshow", function () {
+      showLanguage(currentLanguage);
+      updateLinks();
+    });
+
+    
+    var previous = document.referrer ? new URL(document.referrer) : null;
+    if (previous && previous.origin === window.location.origin &&
+        /^\/(?:cn\/?)?$/.test(previous.pathname) &&
+        (/^\/cn(?:\/|$)/.test(previous.pathname) !== (currentLanguage === "zh")) &&
+        window.location.hash) {
+      window.addEventListener("load", function () {
+        var section = document.getElementById(window.location.hash.slice(1));
+        if (section) {
+          if (window.jQuery) {
+            window.jQuery("html, body").stop(true);
+            document.body.classList.remove("scrolling");
+          }
+          window.scrollTo(0, Math.ceil(section.getBoundingClientRect().top + window.scrollY - navbar.offsetHeight));
+          updateLinks();
+        }
+      }, { once: true });
     }
 
-    root.classList.add("language-switcher", "language-switcher-ready");
+    updateLinks();
+    root.classList.add("language-switcher-ready");
   }
 
   if (document.readyState === "loading") {
