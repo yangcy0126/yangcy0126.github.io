@@ -59,7 +59,7 @@
           <div class="featured-publication-card">
             <div class="featured-publication-text">
               {{- with .publication_url -}}<a href="{{.}}" target="_blank" rel="noopener">{{- end -}}
-              <h4 class="card-title exp-title text-muted my-0">{{.publication_name | markdownify | emojify}}</h4>
+              <h4 class="card-title exp-title publication-title my-0">{{.publication_name | markdownify | emojify}}</h4>
               {{- with .publication_url -}}</a>{{- end -}}
 
                 {{- with .writer_names -}}
@@ -69,7 +69,7 @@
                 {{- end -}}
 
               {{- with .organization -}}
-                  <div class="">{{ . | markdownify | emojify}}</div>
+                  <div class="publication-citation">{{ . | markdownify | emojify}}</div>
               {{- end -}}
             </div>
 
