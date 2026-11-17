@@ -90,9 +90,9 @@
               <p class="institution">
                 {{ .institution }}{{ if .advisor }}, <span>Advisor:</span>
                   {{ if .advisor_link }}
-                    <a href="{{ .advisor_link }}" target="_blank" rel="noopener" style="font-size: 16px; font-weight: normal;">{{ .advisor }}</a>
+                    <a class="advisor-name" href="{{ .advisor_link }}" target="_blank" rel="noopener" style="font-size: 16px; font-weight: normal;">{{ .advisor }}</a>
                   {{ else }}
-                    <span style="font-size: 16px; font-weight: normal;">{{ .advisor }}</span>
+                    <span class="advisor-name" style="font-size: 16px; font-weight: normal;">{{ .advisor }}</span>
                   {{ end }}
                 {{ end }}
               </p>

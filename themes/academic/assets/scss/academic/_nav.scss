@@ -132,7 +132,7 @@
   color: $sta-menu-text;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   // Used in conjunction with mobile .navbar-brand to center logo on mobile.
   .navbar-brand-mobile-wrapper {
     position: absolute;
@@ -157,7 +157,7 @@
     z-index: 1031 !important;  // Appear just over navbar.
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 100%;
     width: 100%;
     background-color: $sta-menu-primary;
     text-align: center !important;
