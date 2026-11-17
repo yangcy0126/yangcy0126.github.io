@@ -185,6 +185,72 @@
   font-size: 16px;
 }
 
+.featured-publication-text .publication-title {
+  color: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.featured-publication-text .article-metadata {
+  color: #59616a;
+}
+
+.publication-citation {
+  color: #42474d;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.home-section .card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+}
+
+.home-section .card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-updated {
+  color: #616971;
+  font-size: 14px;
+}
+
+body.dark .home-section a:not(.btn),
+body.dark .award-certificate-trigger,
+body.dark .award-certificate-preview-actions a {
+  color: #8ac4ff;
+}
+
+body.dark .home-section a:not(.btn):hover,
+body.dark .home-section a:not(.btn):focus-visible,
+body.dark .award-certificate-preview-actions a:hover,
+body.dark .award-certificate-preview-actions a:focus-visible {
+  color: #b7dcff;
+}
+
+body.dark .featured-publication-text .article-metadata,
+body.dark .publication-citation,
+body.dark .profile-updated {
+  color: #cbd3dc;
+}
+
+body.dark .publication-citation > span {
+  color: inherit !important;
+}
+
+body.dark .award-certificate-trigger,
+body.dark .award-certificate-preview-actions a {
+  border-color: #8ac4ff;
+}
+
+body.dark .award-certificate-trigger:hover,
+body.dark .award-certificate-trigger:focus,
+body.dark .award-certificate-preview-actions a.is-active {
+  border-color: #8ac4ff;
+  background: #8ac4ff;
+  color: #1f2933;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   @view-transition {
@@ -1063,7 +1129,7 @@ body.dark .award-certificate-preview-header {
 
     </div>
 
-    <p class="text-right text-muted" style="font-size: 0.9rem; margin: 1rem 0 0; padding-right: 0.75rem; white-space: nowrap;">Last updated: November 2026</p>
+    <p class="profile-updated text-right" style="margin: 1rem 0 0; padding-right: 0.75rem; white-space: nowrap;">Last updated: November 2026</p>
   </div>
 </div>
 
@@ -1168,7 +1234,7 @@ body.dark .award-certificate-preview-header {
       <div class="card experience course">
         <div class="card-body">
           <div class="featured-publication-card">
-            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.jbankfin.2026.107799" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Bank digitalization, liquidity allocation and consumption inequality: Evidence from China</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Wu, J.</div><div class=""><em>Journal of Banking and Finance</em>. 2026, 192, 107799</div></div><div class="featured-publication-image-wrap">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.jbankfin.2026.107799" target="_blank" rel="noopener"><h4 class="card-title exp-title publication-title my-0">Bank digitalization, liquidity allocation and consumption inequality: Evidence from China</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Wu, J.</div><div class="publication-citation"><em>Journal of Banking and Finance</em>. 2026, 192, 107799</div></div><div class="featured-publication-image-wrap">
                 <img class="featured-publication-image" src="/img/publications/bank-liquidity-consumption-inequality.jpg" alt="Bank digitalization, liquidity allocation, and consumption inequality">
               </div></div>
 
@@ -1179,7 +1245,7 @@ body.dark .award-certificate-preview-header {
       <div class="card experience course">
         <div class="card-body">
           <div class="featured-publication-card">
-            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.jbusres.2026.116237" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">The Allocative Channel of Digital Transformation: Information Precision and Production-Network Spillovers</h4></a><div class="card-subtitle my-0 article-metadata">Gu, M., <strong>Yang, C*</strong>.</div><div class=""><em>Journal of Business Research</em>. 2026, 212, 116237</div></div><div class="featured-publication-image-wrap">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.jbusres.2026.116237" target="_blank" rel="noopener"><h4 class="card-title exp-title publication-title my-0">The Allocative Channel of Digital Transformation: Information Precision and Production-Network Spillovers</h4></a><div class="card-subtitle my-0 article-metadata">Gu, M., <strong>Yang, C*</strong>.</div><div class="publication-citation"><em>Journal of Business Research</em>. 2026, 212, 116237</div></div><div class="featured-publication-image-wrap">
                 <img class="featured-publication-image" src="/img/publications/allocative-channel.jpg" alt="Allocative channel of digital transformation">
               </div></div>
 
@@ -1190,7 +1256,7 @@ body.dark .award-certificate-preview-header {
       <div class="card experience course">
         <div class="card-body">
           <div class="featured-publication-card">
-            <div class="featured-publication-text"><a href="https://doi.org/10.1111/fire.12404" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Digitalization of banks and inclusive finance: New insights from cultural industry’s financing constraints</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Chen, L., Li, Q., Wu, J.</div><div class=""><em>Financial Review</em>. 2025, 60(1), 71-93</div></div><div class="featured-publication-image-wrap">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1111/fire.12404" target="_blank" rel="noopener"><h4 class="card-title exp-title publication-title my-0">Digitalization of banks and inclusive finance: New insights from cultural industry’s financing constraints</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Chen, L., Li, Q., Wu, J.</div><div class="publication-citation"><em>Financial Review</em>. 2025, 60(1), 71-93</div></div><div class="featured-publication-image-wrap">
                 <img class="featured-publication-image" src="/img/publications/bank-digitalization-inclusive-finance.jpg" alt="Bank digitalization and inclusive finance">
               </div></div>
 
@@ -1201,7 +1267,7 @@ body.dark .award-certificate-preview-header {
       <div class="card experience course">
         <div class="card-body">
           <div class="featured-publication-card">
-            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.techfore.2024.123722" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Government in the digital age: Exploring the impact of digital transformation on governmental efficiency</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Gu, M., Albitar, K.</div><div class=""><em>Technological Forecasting and Social Change</em>. 2024, 208, 123722</div></div><div class="featured-publication-image-wrap">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1016/j.techfore.2024.123722" target="_blank" rel="noopener"><h4 class="card-title exp-title publication-title my-0">Government in the digital age: Exploring the impact of digital transformation on governmental efficiency</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Gu, M., Albitar, K.</div><div class="publication-citation"><em>Technological Forecasting and Social Change</em>. 2024, 208, 123722</div></div><div class="featured-publication-image-wrap">
                 <img class="featured-publication-image" src="/img/publications/government-digital-transformation-v2.jpg" alt="Government digital transformation framework">
               </div></div>
 
@@ -1212,7 +1278,7 @@ body.dark .award-certificate-preview-header {
       <div class="card experience course">
         <div class="card-body">
           <div class="featured-publication-card">
-            <div class="featured-publication-text"><a href="https://doi.org/10.1002/bse.3692" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">ESG ratings and green innovation: A U-shaped journey towards sustainable development</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Zhu, C., Albitar, K.</div><div class=""><em>Business Strategy and the Environment</em>. 2024, 33(5), 4108-4129</div></div><div class="featured-publication-image-wrap">
+            <div class="featured-publication-text"><a href="https://doi.org/10.1002/bse.3692" target="_blank" rel="noopener"><h4 class="card-title exp-title publication-title my-0">ESG ratings and green innovation: A U-shaped journey towards sustainable development</h4></a><div class="card-subtitle my-0 article-metadata"><strong>Yang, C.</strong>, Zhu, C., Albitar, K.</div><div class="publication-citation"><em>Business Strategy and the Environment</em>. 2024, 33(5), 4108-4129</div></div><div class="featured-publication-image-wrap">
                 <img class="featured-publication-image" src="/img/publications/esg-green-innovation.jpg" alt="ESG ratings and green innovation">
               </div></div>
 
@@ -1962,7 +2028,7 @@ body.dark .award-certificate-preview-header {
       <div class="card experience course">
         <div class="card-body">
           <div class="featured-publication-card">
-            <div class="featured-publication-text"><a href="https://kns.cnki.net/kcms2/article/abstract?v=_W1AupcyYgY7y35f8i7M4Lxl8TAOHk50Iv8xLDtxdpPgpdR99pq4_QR_leQPB2w4mnJNP5ROTWt9CzXODGLXsgD27qdYER5iyzejYfNPqIAxLmK5-g4mipdkAnLMLYRnGE5v5NToY8stZJBL2LIkP5T6XxSK6_gVz7mt6IyrWdwDiSillyba-1BcQTfZaaAl&amp;uniplatform" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">中国数字普惠金融的发展模式探究：经济与民生的视角</h4></a><div class="card-subtitle my-0 article-metadata">曾燕, 查佳婧, 杨海生, <strong>杨存奕（通讯作者）</strong></div><div class="">《经济研究》. 2024, 59(8), 39-56<br><span style='font-size: 0.85em; color: #555;'>被《新华文摘》《人大复印报刊资料》《国际货币评论》《数字经济与贸易自主知识体系建构报告》转载</span></div></div><div class="featured-publication-image-wrap">
+            <div class="featured-publication-text"><a href="https://kns.cnki.net/kcms2/article/abstract?v=_W1AupcyYgY7y35f8i7M4Lxl8TAOHk50Iv8xLDtxdpPgpdR99pq4_QR_leQPB2w4mnJNP5ROTWt9CzXODGLXsgD27qdYER5iyzejYfNPqIAxLmK5-g4mipdkAnLMLYRnGE5v5NToY8stZJBL2LIkP5T6XxSK6_gVz7mt6IyrWdwDiSillyba-1BcQTfZaaAl&amp;uniplatform" target="_blank" rel="noopener"><h4 class="card-title exp-title publication-title my-0">中国数字普惠金融的发展模式探究：经济与民生的视角</h4></a><div class="card-subtitle my-0 article-metadata">曾燕, 查佳婧, 杨海生, <strong>杨存奕（通讯作者）</strong></div><div class="publication-citation">《经济研究》. 2024, 59(8), 39-56<br><span style='font-size: 0.85em; color: #555;'>被《新华文摘》《人大复印报刊资料》《国际货币评论》《数字经济与贸易自主知识体系建构报告》转载</span></div></div><div class="featured-publication-image-wrap">
                 <img class="featured-publication-image" src="/img/publications/cn-digital-inclusive-finance.jpg" alt="中国数字普惠金融发展模式">
               </div></div>
 
@@ -1973,7 +2039,7 @@ body.dark .award-certificate-preview-header {
       <div class="card experience course">
         <div class="card-body">
           <div class="featured-publication-card">
-            <div class="featured-publication-text"><a href="https://doi.org/10.12011/SETP2023-2928" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">数字平台推荐机制、专业化生产与消费者福利</h4></a><div class="card-subtitle my-0 article-metadata">廖高可, <strong>杨存奕</strong>, 顾明瑞</div><div class="">《系统工程理论与实践》. 2025, 45(10), 3323-3337</div></div><div class="featured-publication-image-wrap">
+            <div class="featured-publication-text"><a href="https://doi.org/10.12011/SETP2023-2928" target="_blank" rel="noopener"><h4 class="card-title exp-title publication-title my-0">数字平台推荐机制、专业化生产与消费者福利</h4></a><div class="card-subtitle my-0 article-metadata">廖高可, <strong>杨存奕</strong>, 顾明瑞</div><div class="publication-citation">《系统工程理论与实践》. 2025, 45(10), 3323-3337</div></div><div class="featured-publication-image-wrap">
                 <img class="featured-publication-image" src="/img/publications/cn-platform-recommendation.jpg" alt="数字平台推荐机制与消费者福利">
               </div></div>
 
@@ -1984,7 +2050,7 @@ body.dark .award-certificate-preview-header {
       <div class="card experience course">
         <div class="card-body">
           <div class="featured-publication-card">
-            <div class="featured-publication-text"><a href="https://doi.org/10.12011/SETP2022-1728" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">企业金融化：最优配置、动机判别与适度区域</h4></a><div class="card-subtitle my-0 article-metadata">黄哲豪, <strong>杨存奕</strong>, 李正辉</div><div class="">《系统工程理论与实践》. 2023, 43(6), 1545-1567</div></div><div class="featured-publication-image-wrap">
+            <div class="featured-publication-text"><a href="https://doi.org/10.12011/SETP2022-1728" target="_blank" rel="noopener"><h4 class="card-title exp-title publication-title my-0">企业金融化：最优配置、动机判别与适度区域</h4></a><div class="card-subtitle my-0 article-metadata">黄哲豪, <strong>杨存奕</strong>, 李正辉</div><div class="publication-citation">《系统工程理论与实践》. 2023, 43(6), 1545-1567</div></div><div class="featured-publication-image-wrap">
                 <img class="featured-publication-image" src="/img/publications/cn-corporate-financialization.jpg" alt="企业金融化最优配置">
               </div></div>
 
