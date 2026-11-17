@@ -105,22 +105,11 @@
 
 
 
-        {{/*语言选择下拉框*/}}
-      <li class="nav-item dropdown i18n-dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-            {{/*<i class="fas fa-globe mr-1" aria-hidden="true"></i><span class="d-none d-lg-inline">{{ index site.Data.i18n.languages .Lang }}</span>*/}}
-          <i class="fas fa-language mr-1" aria-hidden="true"></i><span class="d-none d-lg-inline"> </span>
-        </a>
-        <div class="dropdown-menu">
-            {{/*<div class="dropdown-item i18n-active font-weight-bold">
-              <span>{{ index site.Data.i18n.languages .Lang }}</span>
-            </div>*/}}
-          <a class="dropdown-item  i18n-active" href="/" >
-            <span>En</span>
-          </a>
-          <a class="dropdown-item " href="/cn" >
-            <span>Cn</span>
-          </a>
+      <li class="nav-item i18n-dropdown language-switcher" data-current-language="en">
+        <div class="dropdown-menu" role="group" aria-label="Language">
+          <span class="language-switcher-thumb" aria-hidden="true"></span>
+          <a class="dropdown-item language-switcher-option" data-language="en" href="/" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a>
+          <a class="dropdown-item language-switcher-option" data-language="zh" href="/cn/" lang="zh" hreflang="zh" aria-label="中文">中文</a>
         </div>
       </li>
 

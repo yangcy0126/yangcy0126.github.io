@@ -6,37 +6,112 @@
       return;
     }
 
-    var menu = root.querySelector(".dropdown-menu");
-    var toggle = root.querySelector(".dropdown-toggle");
-    if (!menu) {
-      return;
+    var currentLanguage = root.getAttribute("data-current-language");
+    var links = Array.prototype.slice.call(root.querySelectorAll("a[data-language]"));
+    var sections = Array.prototype.slice.call(document.querySelectorAll(".home-section[id]"));
+    var navbar = document.getElementById("navbar-main");
+    var updatePending = false;
+    var prefetched = false;
+
+    function showLanguage(language) {
+      root.setAttribute("data-current-language", language);
+      links.forEach(function (link) {
+        if (link.getAttribute("data-language") === language) {
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
     }
 
-    var currentPath = window.location.pathname;
-    var currentHash = window.location.hash;
-    var isChineseCurrent = /^zh/i.test(document.documentElement.lang || "") || /\/cn(?:\/|$)/.test(currentPath);
-    root.setAttribute("data-current-language", isChineseCurrent ? "zh" : "en");
+    function currentSection() {
+      var id = "";
+      var readingLine = navbar.getBoundingClientRect().bottom + 80;
+      sections.forEach(function (section) {
+        if (section.getBoundingClientRect().top <= readingLine) {
+          id = section.id;
+        }
+      });
+      return id === "about" ? "" : id;
+    }
 
-    Array.prototype.forEach.call(menu.querySelectorAll("a[href]"), function (link) {
-      var href = link.getAttribute("href") || "";
-      var isChinese = /\/cn(?:\/|$)/.test(href);
-      var target = isChinese ? "/cn/" : "/";
-      link.textContent = isChinese ? "中文" : "EN";
-      link.classList.add("language-switcher-option");
-      link.href = target + currentHash;
-      if (isChinese === isChineseCurrent) {
-        link.setAttribute("aria-current", "page");
-      } else {
-        link.removeAttribute("aria-current");
+    function updateLinks() {
+      var section = currentSection();
+      links.forEach(function (link) {
+        var isChinese = link.getAttribute("data-language") === "zh";
+        // Chinese publications share a single section on the Chinese homepage.
+        var targetSection = isChinese && section === "contributionsInChinese" ? "featuredPublications" : section;
+        link.href = (isChinese ? "/cn/" : "/") + (targetSection ? "#" + targetSection : "");
+      });
+      updatePending = false;
+    }
+
+    function scheduleUpdate() {
+      if (!updatePending) {
+        updatePending = true;
+        window.requestAnimationFrame(updateLinks);
       }
+    }
+
+    function prefetchLanguage(link) {
+      updateLinks();
+      if (prefetched || link.getAttribute("data-language") === currentLanguage ||
+          (navigator.connection && navigator.connection.saveData)) {
+        return;
+      }
+      var hint = document.createElement("link");
+      hint.rel = "prefetch";
+      hint.href = link.pathname;
+      document.head.appendChild(hint);
+      prefetched = true;
+    }
+
+    links.forEach(function (link) {
+      ["pointerenter", "focus", "pointerdown"].forEach(function (eventName) {
+        link.addEventListener(eventName, function () { prefetchLanguage(link); });
+      });
+      link.addEventListener("click", function (event) {
+        updateLinks();
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+          return;
+        }
+        var language = link.getAttribute("data-language");
+        if (language === currentLanguage) {
+          event.preventDefault();
+          return;
+        }
+        showLanguage(language);
+      });
     });
 
-    if (toggle) {
-      toggle.setAttribute("aria-hidden", "true");
-      toggle.setAttribute("tabindex", "-1");
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    window.addEventListener("pageshow", function () {
+      showLanguage(currentLanguage);
+      updateLinks();
+    });
+
+    // Cancel the theme's extra anchor animation only on a language-switch arrival.
+    var previous = document.referrer ? new URL(document.referrer) : null;
+    if (previous && previous.origin === window.location.origin &&
+        /^\/(?:cn\/?)?$/.test(previous.pathname) &&
+        (/^\/cn(?:\/|$)/.test(previous.pathname) !== (currentLanguage === "zh")) &&
+        window.location.hash) {
+      window.addEventListener("load", function () {
+        var section = document.getElementById(window.location.hash.slice(1));
+        if (section) {
+          if (window.jQuery) {
+            window.jQuery("html, body").stop(true);
+            document.body.classList.remove("scrolling");
+          }
+          window.scrollTo(0, Math.ceil(section.getBoundingClientRect().top + window.scrollY - navbar.offsetHeight));
+          updateLinks();
+        }
+      }, { once: true });
     }
 
-    root.classList.add("language-switcher", "language-switcher-ready");
+    updateLinks();
+    root.classList.add("language-switcher-ready");
   }
 
   if (document.readyState === "loading") {

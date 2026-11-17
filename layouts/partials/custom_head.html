@@ -1,3 +1,23 @@
+<script>
+(function () {
+  function restoreTheme() {
+    if (!document.body) return;
+    var saved = null;
+    try { saved = localStorage.getItem("dark_mode"); } catch (error) {}
+    var dark = saved === null ?
+      document.body.classList.contains("dark") || window.matchMedia("(prefers-color-scheme: dark)").matches :
+      saved === "1";
+    document.body.classList.toggle("dark", dark);
+    var icon = document.querySelector(".js-dark-toggle i");
+    if (icon) {
+      icon.classList.toggle("fa-sun", dark);
+      icon.classList.toggle("fa-moon", !dark);
+    }
+  }
+  window.addEventListener("pagereveal", restoreTheme, { once: true });
+  document.addEventListener("DOMContentLoaded", restoreTheme, { once: true });
+}());
+</script>
 <style>
 #about .col-12.col-lg-8 > p {
   margin-bottom: 0.4rem;
@@ -17,9 +37,30 @@
   font-size: 16px;
 }
 
-.language-switcher > .dropdown-toggle {
-  display: none;
+{{ if .IsHome }}
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
 }
+
+::view-transition-old(root),
+::view-transition-new(root),
+::view-transition-group(language-switcher-thumb) {
+  animation-duration: 0.2s;
+  animation-timing-function: ease;
+}
+
+.home-section {
+  scroll-margin-top: 70px;
+}
+
+@media (max-width: 991.98px) {
+  .home-section {
+    scroll-margin-top: 50px;
+  }
+}
+{{ end }}
 
 .language-switcher > .dropdown-menu {
   position: relative !important;
@@ -41,7 +82,7 @@
   transform: none !important;
 }
 
-.language-switcher > .dropdown-menu::before {
+.language-switcher-thumb {
   position: absolute;
   top: 3px;
   bottom: 3px;
@@ -49,12 +90,12 @@
   width: calc((100% - 10px) / 2);
   border-radius: 999px;
   background: #0056A2;
-  content: "";
   pointer-events: none;
-  transition: transform 0.18s ease;
+  view-transition-name: language-switcher-thumb;
+  transition: transform 0.2s ease;
 }
 
-.language-switcher[data-current-language="zh"] > .dropdown-menu::before {
+.language-switcher[data-current-language="zh"] .language-switcher-thumb {
   transform: translateX(calc(100% + 4px));
 }
 
@@ -86,7 +127,7 @@
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
-  transition: color 0.18s ease;
+  transition: color 0.2s ease;
 }
 
 .language-switcher .language-switcher-option:hover,
@@ -97,6 +138,18 @@
 
 .language-switcher .language-switcher-option[aria-current="page"] {
   color: #fff !important;
+}
+
+.language-switcher .language-switcher-option:focus-visible {
+  outline: 2px solid #0056A2;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-switcher-thumb,
+  .language-switcher .language-switcher-option {
+    transition: none;
+  }
 }
 
 body.dark .language-switcher > .dropdown-menu {
