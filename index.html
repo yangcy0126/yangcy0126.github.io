@@ -192,11 +192,20 @@
   }
 }
 
-::view-transition-old(root),
-::view-transition-new(root),
-::view-transition-group(language-switcher-thumb) {
+::view-transition-old(*),
+::view-transition-new(*),
+::view-transition-group(*) {
   animation-duration: 0.2s;
   animation-timing-function: ease;
+}
+
+::view-transition-group(language-switcher-thumb) {
+  z-index: 1;
+}
+
+::view-transition-group(language-switcher-en),
+::view-transition-group(language-switcher-zh) {
+  z-index: 2;
 }
 
 .home-section {
@@ -286,6 +295,14 @@
 
 .language-switcher .language-switcher-option[aria-current="page"] {
   color: #fff !important;
+}
+
+.language-switcher-option[data-language="en"] {
+  view-transition-name: language-switcher-en;
+}
+
+.language-switcher-option[data-language="zh"] {
+  view-transition-name: language-switcher-zh;
 }
 
 .language-switcher .language-switcher-option:focus-visible {
