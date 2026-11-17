@@ -19,7 +19,7 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 +++
-China Young Economists Forum<br>
+Young Economists Forum<br>
 <span style="font-size: 0.95em; color: #555;">Guangzhou 2026</span></p></li>
 
 China Finance Annual Conference<br>
